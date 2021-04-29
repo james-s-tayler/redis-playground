@@ -10,9 +10,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Redis.Libs.Queue;
 using StackExchange.Redis;
 
-namespace Voting.Api
+namespace Redis.App
 {
     public class Startup
     {
@@ -27,7 +28,12 @@ namespace Voting.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<IConnectionMultiplexer>(ConnectionMultiplexer.Connect("localhost"));
-
+            services.AddSingleton<IDatabaseAsync>(provider =>
+            {
+                var connectionMultiplexer = provider.GetService<IConnectionMultiplexer>();
+                return connectionMultiplexer.GetDatabase(0);
+            });
+            services.AddSingleton<IQueue, Queue>();
             services.AddControllers();
         }
 

@@ -8,5 +8,9 @@
       <PackageReference Include="StackExchange.Redis" Version="2.2.4" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Redis.Libs\Redis.Libs.csproj" />
+    </ItemGroup>
+
 
 </Project>

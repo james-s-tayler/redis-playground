@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Voting.Api": {
+    "Redis.App": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "Vote",
