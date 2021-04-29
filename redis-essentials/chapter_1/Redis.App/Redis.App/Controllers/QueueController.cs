@@ -43,7 +43,7 @@ namespace Redis.App.Controllers
             var size = default(long);
             for (var i = 0; i < count; i++)
             {
-                size = await _queue.Push(name, $"message #{i}");
+                size = await _queue.Push(name, DateTimeOffset.UtcNow.ToUnixTimeMilliseconds().ToString());
             }
 
             return $"{size} message(s) currently in the queue.";
