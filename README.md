@@ -18,6 +18,8 @@
    - [Redis Data Structures for Non-Redis Users](https://www.youtube.com/watch?v=ELk_W9BBTDU)
    - [Implementing a New Data Structure for Redis](https://www.youtube.com/watch?v=pmxaztRsoF4)
  - ### Redis In Production
+   - #### War Stories
+     - [Learn Redis the hard way... in production - DEVit 2017](https://www.youtube.com/watch?v=PHsx0Fy-knA) 
    - #### High Availability
      - [Ensure Redis Reliability with Gremlin, Chaos Engineering](https://www.youtube.com/watch?v=i5QpK--35_s)
      - [App Sharded Redis w/Sentinel vs Redis Cluster - RedisConf 2019](https://www.youtube.com/watch?v=dQo8Pb7KTrg)
