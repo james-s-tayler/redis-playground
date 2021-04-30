@@ -1,4 +1,6 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -32,7 +34,7 @@ namespace Redis.App.Controllers
         }
         
         [HttpGet("Push/{name}/{count}")]
-        public async Task<string> Push(string name, int count)
+        public async Task<string> Push(string name, int count, bool batch = false)
         {
             if (string.IsNullOrEmpty(name))
                 throw new ArgumentNullException(nameof(name));
@@ -40,14 +42,28 @@ namespace Redis.App.Controllers
             if(count <= 0 || count >= int.MaxValue)
                 throw new ArgumentOutOfRangeException(nameof(count));
 
+            
             var size = default(long);
-            for (var i = 0; i < count; i++)
+            
+            if (batch)
             {
-                size = await _queue.Push(name, DateTimeOffset.UtcNow.ToUnixTimeMilliseconds().ToString());
+                Task[] pushCommands = new Task[count];
+                for (var i = 0; i < count; i++)
+                {
+                    pushCommands[i] = _queue.Push(name, DateTimeOffset.UtcNow.ToUnixTimeMilliseconds().ToString());
+                }
+                Task.WaitAll(pushCommands);
+                size = await _queue.Size(name);
             }
-
+            else
+            {
+                for (var i = 0; i < count; i++)
+                {
+                    size = await _queue.Push(name, DateTimeOffset.UtcNow.ToUnixTimeMilliseconds().ToString());
+                }    
+            }
+            
             return $"{size} message(s) currently in the queue.";
         }
-        
     }
 }
