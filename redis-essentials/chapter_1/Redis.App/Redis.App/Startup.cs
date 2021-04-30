@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using OpenTelemetry.Trace;
 using Redis.Libs.Queue;
 using StackExchange.Redis;
 
@@ -35,6 +36,11 @@ namespace Redis.App
             });
             services.AddSingleton<IQueue, Queue>();
             services.AddControllers();
+            services.AddOpenTelemetryTracing(
+                (builder) => builder
+                    .AddAspNetCoreInstrumentation()
+                    .AddConsoleExporter()
+            );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
