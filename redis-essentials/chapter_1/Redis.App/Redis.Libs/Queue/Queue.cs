@@ -14,7 +14,7 @@ namespace Redis.Libs.Queue
 
         public async Task<long> Push(string key, string value)
         {
-           return await _database.ListLeftPushAsync(FullKey(key), value);
+           return await _database.ListLeftPushAsync(FullKey(key), value, When.Always, CommandFlags.FireAndForget);
         }
 
         public async Task<string> Pop(string key)

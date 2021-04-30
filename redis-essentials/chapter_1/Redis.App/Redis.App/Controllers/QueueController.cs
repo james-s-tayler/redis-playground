@@ -34,7 +34,7 @@ namespace Redis.App.Controllers
         }
         
         [HttpGet("Push/{name}/{count}")]
-        public async Task<string> Push(string name, int count, bool batch = false)
+        public async Task<string> Push(string name, int count, bool useTpl = false)
         {
             if (string.IsNullOrEmpty(name))
                 throw new ArgumentNullException(nameof(name));
@@ -45,7 +45,7 @@ namespace Redis.App.Controllers
             
             var size = default(long);
             
-            if (batch)
+            if (useTpl)
             {
                 Task[] pushCommands = new Task[count];
                 for (var i = 0; i < count; i++)
