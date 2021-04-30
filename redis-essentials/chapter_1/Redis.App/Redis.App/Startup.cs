@@ -28,7 +28,8 @@ namespace Redis.App
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<IConnectionMultiplexer>(ConnectionMultiplexer.Connect("localhost"));
+            var redisClientConnection = ConnectionMultiplexer.Connect("localhost");
+            services.AddSingleton<IConnectionMultiplexer>(redisClientConnection);
             services.AddSingleton<IDatabaseAsync>(provider =>
             {
                 var connectionMultiplexer = provider.GetService<IConnectionMultiplexer>();
@@ -37,10 +38,13 @@ namespace Redis.App
             services.AddSingleton<IQueue, Queue>();
             services.AddControllers();
             services.AddOpenTelemetryTracing(
-                (builder) => builder
-                    .AddAspNetCoreInstrumentation()
-                    .AddConsoleExporter()
-            );
+                (builder) =>
+                {
+                    builder
+                        .AddAspNetCoreInstrumentation()
+                        .AddRedisInstrumentation(redisClientConnection)
+                        .AddConsoleExporter();
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
