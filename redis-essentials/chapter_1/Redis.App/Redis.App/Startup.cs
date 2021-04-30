@@ -43,7 +43,7 @@ namespace Redis.App
                     builder
                         .AddAspNetCoreInstrumentation()
                         .AddRedisInstrumentation(redisClientConnection)
-                        .AddConsoleExporter();
+                        .AddJaegerExporter();
                 });
         }
 
