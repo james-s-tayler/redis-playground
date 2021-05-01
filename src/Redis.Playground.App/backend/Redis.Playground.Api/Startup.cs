@@ -11,10 +11,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using OpenTelemetry.Trace;
-using Redis.Libs.Queue;
+using Redis.Playground.Libs.Queue;
 using StackExchange.Redis;
 
-namespace Redis.App
+namespace Redis.Playground.Api
 {
     public class Startup
     {

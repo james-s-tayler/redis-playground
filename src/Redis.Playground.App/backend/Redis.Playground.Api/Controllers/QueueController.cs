@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Redis.Libs.Queue;
+using Redis.Playground.Libs.Queue;
 
-namespace Redis.App.Controllers
+namespace Redis.Playround.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]

@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
 using StackExchange.Redis;
 
-namespace Redis.Libs.Queue
+namespace Redis.Playground.Libs.Queue
 {
     public class Queue : IQueue
     {

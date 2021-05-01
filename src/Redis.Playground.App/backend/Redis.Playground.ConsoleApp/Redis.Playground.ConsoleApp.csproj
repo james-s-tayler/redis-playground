@@ -10,7 +10,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Redis.Libs\Redis.Libs.csproj" />
+      <ProjectReference Include="..\Redis.Playground.Libs\Redis.Playground.Libs.csproj" />
     </ItemGroup>
 
 </Project>

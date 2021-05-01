@@ -1,10 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Redis.App", "Redis.App\Redis.App.csproj", "{C5AC84A7-EFDA-470E-985B-3D255DDBCC63}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Redis.Playground.Api", "Redis.Playground.Api\Redis.Playground.Api.csproj", "{C5AC84A7-EFDA-470E-985B-3D255DDBCC63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Redis.Libs", "Redis.Libs\Redis.Libs.csproj", "{67293808-4D0A-44F5-AB70-17306522E747}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Redis.Playground.Libs", "Redis.Playground.Libs\Redis.Playground.Libs.csproj", "{67293808-4D0A-44F5-AB70-17306522E747}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Redis.ConsoleApp", "Redis.ConsoleApp\Redis.ConsoleApp.csproj", "{82971E04-58E0-457E-A3A2-1EDE7E9D444E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Redis.Playground.ConsoleApp", "Redis.Playground.ConsoleApp\Redis.Playground.ConsoleApp.csproj", "{82971E04-58E0-457E-A3A2-1EDE7E9D444E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

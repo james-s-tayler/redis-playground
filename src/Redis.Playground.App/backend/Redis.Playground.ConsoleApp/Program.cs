@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Linq;
-using Redis.Libs.Queue;
+using Redis.Playground.Libs.Queue;
 using StackExchange.Redis;
 
-namespace Redis.ConsoleApp
+namespace Redis.Playground.ConsoleApp
 {
     class Program
     {

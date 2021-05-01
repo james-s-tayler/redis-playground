@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using StackExchange.Redis;
 
-namespace Redis.App.Controllers
+namespace Redis.Playground.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]

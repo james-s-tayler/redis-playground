@@ -1,0 +1,64 @@
+version: "3.6"
+
+volumes:
+  redis-playground-prometheus_prometheus:
+  redis-playground-prometheus_grafana:
+
+services:
+  redis:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - 6379:6379
+    networks:
+     - redis-playground
+
+  backend-api:
+    container_name: redis-playground-api
+    ports:
+     - "5000:80"
+    environment:
+     - ASPNETCORE_ENVIRONMENT=Development
+    build:
+      context: src/Redis.Playground.App/backend
+      dockerfile: Redis.Playground.Api/Dockerfile
+    networks:
+     - redis-playground
+    depends_on:
+     - redis
+  
+  prometheus:
+    container_name: prometheus
+    image: prom/prometheus:v2.15.2
+    ports:
+      - "9090:9090"
+    volumes:
+      - redis-playground-prometheus_prometheus:/prometheus
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    networks:
+      - redis-playground
+
+  grafana:
+    container_name: grafana
+    image: grafana/grafana:6.6.1
+    ports:
+      - "3000:3000"
+    networks:
+      - redis-playground
+    volumes:
+      - redis-playground-prometheus_grafana:/var/lib/grafana
+      - ./grafana/dashboards.yml:/etc/grafana/provisioning/dashboards/redis.yaml
+      - ./grafana/datasources.yml:/etc/grafana/provisioning/datasources/prometheus.yaml
+      - ./grafana/dashboards:/dashboards
+    environment:
+      # https://grafana.com/plugins/flant-statusmap-panel
+      # https://grafana.com/plugins/grafana-piechart-panel
+      # https://grafana.com/plugins/grafana-polystat-panel
+      # https://grafana.com/plugins/jdbranham-diagram-panel
+      # https://grafana.com/plugins/michaeldmoore-multistat-panel
+      # https://grafana.com/plugins/vonage-status-panel
+      # https://grafana.com/plugins/yesoreyeram-boomtable-panel
+      GF_INSTALL_PLUGINS: "flant-statusmap-panel,grafana-piechart-panel"
+
+networks:
+  redis-playground:
