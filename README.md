@@ -47,7 +47,8 @@
      - [Real-Time Redis Deep-Learned Detection at the Edge - RedisConf 2020](https://www.youtube.com/watch?v=lDYnJsX9v50)
      - [Using Redis for Schema Detection](https://www.youtube.com/watch?v=0525hq2uWlk)
    - #### Gaming
-     - [Building Highly Concurrent, Low Latency Gaming System - Redis Day London 2019](https://www.youtube.com/watch?v=5jwuDM6Z3F8)  
+     - [Building Highly Concurrent, Low Latency Gaming System - Redis Day London 2019](https://www.youtube.com/watch?v=5jwuDM6Z3F8)
+     - [Using Redis and RediSearch Module to Store & Search Volatile Data - RedisConf 2017](https://www.youtube.com/watch?v=Zsz1FhLQ2cM)
    - #### Microservices / Application Architecture
      - [Implementation patterns to leverage Redis to turbo charge existing Legacy applications](https://www.youtube.com/watch?v=xQJ58dDPYL4) 
      - [Microservices and Redis: A Match made in Heaven](https://www.youtube.com/watch?v=wfyq_-tWkiY)
@@ -147,6 +148,7 @@
      - [Continuous Availability, Infinite Scaling, Secure, Cost-effective Redis - RedisConf 2017](https://www.youtube.com/watch?v=UOcluQa2XL4)
      - [Redis Enterprise Overview - Redis Day TLV 2016](https://www.youtube.com/watch?v=yk6qGCgavHY)
      - [Troubleshooting Redis Performance Insights w/ Redis Enterprise Cluster](https://www.youtube.com/watch?v=Ox6mRDaqnUE)
+     - [Redis on Flash - A Game-Changing Database Platform for Etermax](https://www.youtube.com/watch?v=EYEksrUcuaw)
    - #### AWS ElastiCache for Redis
      - [Building Resilient Real-Time Applications with Amazon ElastiCache for Redis - AWS Online Tech Talks](https://www.youtube.com/watch?v=dqf_c2UK_zU)
      - [Fast Data at Internet Scale with Amazon ElastiCache for Redis](https://www.youtube.com/watch?v=fyMXt2wI47E)
