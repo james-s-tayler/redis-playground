@@ -138,6 +138,7 @@
      - [Troubleshooting Redis](https://www.youtube.com/watch?v=7ydU97NOZb4)
      - [Redis Networking Nerd Down](https://www.youtube.com/watch?v=3h316lNYMyQ)
      - [Redis is Dead Long live Redis!](https://www.youtube.com/watch?v=NymIgA7Wa78)
+     - [Evolving Your Distributed Cache In A Continuous Delivery World](https://www.youtube.com/watch?v=Dcr6vVHpgWI)
    - #### High Availability / Scaling
      - [Build and Deploy Containerized Redis Cache for High Availability and Performance](https://www.youtube.com/watch?v=LMphQpep3CQ)
      - [Scaling Redis To 1M Ops/Sec](https://www.youtube.com/watch?v=55TFuBMFWns)
