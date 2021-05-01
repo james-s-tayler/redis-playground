@@ -101,7 +101,9 @@
        - [Redis Lua Scripts](https://www.youtube.com/watch?v=eReTl8NhHCs)
        - [Writing Redis Modules in Rust](https://www.youtube.com/watch?v=c1E8jxWVfoI)
        - [Extend Redis With Modules](https://www.youtube.com/watch?v=EglSYFodaqw)
+       - [Josiah Carlson on Redis](https://www.youtube.com/watch?v=exPureoGGPs)
    - #### Concepts / History
+     - [Architecture of Redis](https://youtu.be/EUAGY5HTPYA?t=986)
      - [The Evolution of Redis Key Expiration Algorithms](https://www.youtube.com/watch?v=SyQTG0hXPxY)
      - [Anatomy of a Redis Command](https://www.youtube.com/watch?v=rgE7tZ1yH80)
      - [Designing a Redis Client for Humans](https://www.youtube.com/watch?v=zMGYz5YKYts)
@@ -151,9 +153,11 @@
      - [How Adobe Leverages Redis to Serve and Secure Billions of API Requests](https://www.youtube.com/watch?v=gvQRg4DJDIE)
    - #### Redis Enterprise
      - [Continuous Availability, Infinite Scaling, Secure, Cost-effective Redis - RedisConf 2017](https://www.youtube.com/watch?v=UOcluQa2XL4)
+     - [Ultra Scaling with Redis Enterprise](https://www.youtube.com/watch?v=-4QHqJi9qFk)
      - [Redis Enterprise Overview - Redis Day TLV 2016](https://www.youtube.com/watch?v=yk6qGCgavHY)
      - [Troubleshooting Redis Performance Insights w/ Redis Enterprise Cluster](https://www.youtube.com/watch?v=Ox6mRDaqnUE)
      - [Redis on Flash - A Game-Changing Database Platform for Etermax](https://www.youtube.com/watch?v=EYEksrUcuaw)
+     - [Redis Enterprise Flash: Scaling Data Size with Redis Enterprise at Near RAM Latency](https://youtu.be/EUAGY5HTPYA)
    - #### AWS ElastiCache for Redis
      - [Building Resilient Real-Time Applications with Amazon ElastiCache for Redis - AWS Online Tech Talks](https://www.youtube.com/watch?v=dqf_c2UK_zU)
      - [Fast Data at Internet Scale with Amazon ElastiCache for Redis](https://www.youtube.com/watch?v=fyMXt2wI47E)
@@ -167,6 +171,7 @@
      - [Ensure Redis Reliability with Gremlin, Chaos Engineering](https://www.youtube.com/watch?v=i5QpK--35_s)
    - #### Performance
      - [The Top Redis Metrics that Matter - DataDog 2015](https://www.youtube.com/watch?v=fvByUcN4sHs)
+     - [Extreme Performance at Cloud Scale (ElastiCache) - RedisConf 2019](https://www.youtube.com/watch?v=CQj0sASECr8)
      - [Benchmarking Redis](https://www.youtube.com/watch?v=PPydnyFt8zY)
      - [Redis benchmark in native Linux mode, Linux VM, and Docker container](https://www.youtube.com/watch?v=Qow-sXNM0pQ)
      - [Redis Reliability, Performance & Innovation](https://www.youtube.com/watch?v=A5nvOuUjOjY)
