@@ -24,16 +24,24 @@
      - [Distributed Queue using Redis - DSConf 2020](https://www.youtube.com/watch?v=6mkc8XXaS-I)
      - [Fail Safe Starvation Free Durable Priority Queues in Redis](https://www.youtube.com/watch?v=TyqMM8pGWc0)
      - [Resilient Testing At Scale Using Redis Queues to Manage Concurrency](https://www.youtube.com/watch?v=S7oVdnKZlG8)
- - ### Redis Internals
-   - [Redis Data Structures for Non-Redis Users](https://www.youtube.com/watch?v=ELk_W9BBTDU)
-   - [Implementing a New Data Structure for Redis](https://www.youtube.com/watch?v=pmxaztRsoF4)
-   - [Redis Memory Optimization](https://www.youtube.com/watch?v=0u5WqD0Q8z4)
-   - [The Evolution of Redis Key Expiration Algorithms](https://www.youtube.com/watch?v=SyQTG0hXPxY)
-   - [Anatomy of a Redis Command](https://www.youtube.com/watch?v=rgE7tZ1yH80)
-   - [Designing a Redis Client for Humans](https://www.youtube.com/watch?v=zMGYz5YKYts)
-   - [History of Redis Replication and Future Prospects](https://www.youtube.com/watch?v=T1htSDCYMPY)
-   - [Redis Lua Scripts](https://www.youtube.com/watch?v=eReTl8NhHCs)
-   - [Lessons Learned Running The Redis Open Source Project For 8 Years - Antirez](https://www.youtube.com/watch?v=seLT7M3OAgk)
+   - #### Analytics
+     - [Real Time Log Analytics Using Probabilistic Data Structures in Redis](https://www.youtube.com/watch?v=ord1F0azUcQ)  
+ - ### Redis Concepts / Internals
+   - #### Data Structures
+     - [Redis Data Structures for Non-Redis Users](https://www.youtube.com/watch?v=ELk_W9BBTDU)
+     - [Implementing a New Data Structure for Redis](https://www.youtube.com/watch?v=pmxaztRsoF4)
+   - #### Modules
+     - [RedisGears GA](https://www.youtube.com/watch?v=J4clHQJScZQ)
+     - [Redis Lua Scripts](https://www.youtube.com/watch?v=eReTl8NhHCs)
+   - #### Concepts / History
+     - [The Evolution of Redis Key Expiration Algorithms](https://www.youtube.com/watch?v=SyQTG0hXPxY)
+     - [Anatomy of a Redis Command](https://www.youtube.com/watch?v=rgE7tZ1yH80)
+     - [Designing a Redis Client for Humans](https://www.youtube.com/watch?v=zMGYz5YKYts)
+     - [History of Redis Replication and Future Prospects](https://www.youtube.com/watch?v=T1htSDCYMPY)
+     - [Lessons Learned Running The Redis Open Source Project For 8 Years - Antirez](https://www.youtube.com/watch?v=seLT7M3OAgk)
+   - #### Optimization 
+     - [Redis Memory Optimization](https://www.youtube.com/watch?v=0u5WqD0Q8z4)
+     - [Redis Memory Optimization - RedisConf 2018](https://www.youtube.com/watch?v=h7Onll-9fuM)
  - ### Redis In Production
    - #### War Stories
      - [Learn Redis the hard way... in production - DEVit 2017](https://www.youtube.com/watch?v=PHsx0Fy-knA)
