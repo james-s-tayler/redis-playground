@@ -16,5 +16,5 @@ FROM base AS final
 WORKDIR /app
 RUN ls -ltr
 COPY --from=publish /app/output .
-ENTRYPOINT ["dotnet", "BackendApi.dll"]
+ENTRYPOINT ["dotnet", "Redis.Playground.Api.dll"]
 

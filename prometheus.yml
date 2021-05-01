@@ -23,7 +23,7 @@ scrape_configs:
   # The job name is added as a label `job=<job_name>` to any timeseries scraped from this config.
   - job_name: 'prometheus'
     static_configs:
-      - targets: ['localhost:9090']
+      - targets: ['prometheus:9090']
   - job_name: 'redis_exporter'
     static_configs:
       - targets: ['redis-exporter:9121']
@@ -32,5 +32,4 @@ scrape_configs:
       - targets: ['docker-exporter:9417']
   - job_name: 'redis-playground-api'
     static_configs:
-      - targets: ['redis-playground-api']
-    metrics_path: /metrics
+      - targets: ['redis-playground-api:5000']
