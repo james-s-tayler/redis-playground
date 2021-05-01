@@ -12,6 +12,7 @@
      - [Declarative Caching with Postgres and Redis](https://www.youtube.com/watch?v=IID2LQVztIM)
      - [Improve Cache Speed at Scale - RedisConf 2020](https://www.youtube.com/watch?v=mPg20ykAFU4)
      - [Scaling applications with Azure Redis Cache and Machine Learning](https://www.youtube.com/watch?v=NgERP5g_Nuw)
+     - [Scaling SQL Write-Master Database Clusters](https://www.youtube.com/watch?v=ElP4EoYhROE)
    - #### Session Management
      - [Creating a Highly Available Persistent Session Management Service - RedisConf 2020](https://www.youtube.com/watch?v=Bnq_U-eGOwc)
      - [Session Management - Redis Labs](https://www.youtube.com/watch?v=uJePLpfPsug)
@@ -36,6 +37,7 @@
      - [Resilient Testing At Scale Using Redis Queues to Manage Concurrency](https://www.youtube.com/watch?v=S7oVdnKZlG8)
      - [Redis Pub/Sub for Fast Data Ingest](https://www.youtube.com/watch?v=Zwg1C9u_3K8)
      - [High-performance messaging with Go and Redis](https://www.youtube.com/watch?v=x5__QAIxQZw)
+     - [Cancellable Timeout Queues, A Use Pattern](https://www.youtube.com/watch?v=tcVAqmpdm1I)
    - #### Analytics / AI
      - [Redis Analytics Use Cases](https://www.youtube.com/watch?v=D06iijqAX1A)
      - [Real Time Log Analytics Using Probabilistic Data Structures in Redis](https://www.youtube.com/watch?v=ord1F0azUcQ)
@@ -140,10 +142,13 @@
      - [How Shopify is Scaling Up Its Redis Message Queues](https://www.youtube.com/watch?v=hu6Q6s0432A)
      - [Operationalizing Redis at Scale at Square](https://www.youtube.com/watch?v=8nyJPpbt50I)
      - [Redis at Lyft: 1,000 Instances](https://www.youtube.com/watch?v=U4WspAKekqM)
+     - [Beyond Sharding @Lyft - RedisConf 2020](https://www.youtube.com/watch?v=b9SiLhF9GaU)
      - [Using Redis at Scale at Twitter - RedisConf 2017](https://www.youtube.com/watch?v=QznaOSk20nU)
      - [Redis in a Multi Tenant Environment](https://www.youtube.com/watch?v=qCBoFTjUgZw)
      - [How Roblox Keeps Millions of Users up to Date with Redis Pub/Sub - RedisConf 2017](https://www.youtube.com/watch?v=nXTxXSWBayg)
      - [How GAP scaled over 100x using Redis](https://www.youtube.com/watch?v=mxWUGaPKjtI)
+     - [Processing 160 million messages a day using Redis with Wavy (Portuguese w/ English slides)](https://www.youtube.com/watch?v=N-myTniud5s)
+     - [How Adobe Leverages Redis to Serve and Secure Billions of API Requests](https://www.youtube.com/watch?v=gvQRg4DJDIE)
    - #### Redis Enterprise
      - [Continuous Availability, Infinite Scaling, Secure, Cost-effective Redis - RedisConf 2017](https://www.youtube.com/watch?v=UOcluQa2XL4)
      - [Redis Enterprise Overview - Redis Day TLV 2016](https://www.youtube.com/watch?v=yk6qGCgavHY)
@@ -172,3 +177,9 @@
      - [A Brief History of Encrypting Your Redis Traffic - RedisConf 2020](https://www.youtube.com/watch?v=ula3JoQXbtE)
      - [Exploiting Unauthenticated Redis - TryHackMe!](https://www.youtube.com/watch?v=LVlQmRM6DZ0)
      - [New Security Features in Redis 6 Open Source](https://www.youtube.com/watch?v=57SgF5iht8Y)
+     - [Practical Use Cases for Access Control Lists in Redis 6](https://www.youtube.com/watch?v=BGoBM-Bl2UI)
+     - [Secure Redis Cluster at Box](https://www.youtube.com/watch?v=W1FICEpaQ1A)
+   - #### Monitoring
+     - [RedisInsight - RedisConf 2020](https://www.youtube.com/watch?v=HBC3OSYOgj0)
+     - [RedisInsight - A FREE Robust GUI Tool to Monitor Redis Data](https://www.youtube.com/watch?v=VqPdHngkz1I)
+     - [Monitoring Redis data using RedisInsight - OSConf 2020](https://www.youtube.com/watch?v=BVXFBhKeUxk)
