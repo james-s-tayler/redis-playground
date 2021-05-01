@@ -172,6 +172,7 @@
      - [Redis on Flash - A Game-Changing Database Platform for Etermax](https://www.youtube.com/watch?v=EYEksrUcuaw)
      - [Redis Enterprise Flash: Scaling Data Size with Redis Enterprise at Near RAM Latency](https://youtu.be/EUAGY5HTPYA)
    - #### AWS ElastiCache for Redis
+     - [Extreme Performance at Cloud Scale - RedisConf 2019](https://www.youtube.com/watch?v=CQj0sASECr8)
      - [Building Resilient Real-Time Applications with Amazon ElastiCache for Redis - AWS Online Tech Talks](https://www.youtube.com/watch?v=dqf_c2UK_zU)
      - [Fast Data at Internet Scale with Amazon ElastiCache for Redis](https://www.youtube.com/watch?v=fyMXt2wI47E)
      - [Enterprise-Class Security, High-Availability, & Scalability with Amazon ElastiCache](https://www.youtube.com/watch?v=cXMf4EQWtXg)
@@ -184,7 +185,6 @@
      - [Ensure Redis Reliability with Gremlin, Chaos Engineering](https://www.youtube.com/watch?v=i5QpK--35_s)
    - #### Performance
      - [The Top Redis Metrics that Matter - DataDog 2015](https://www.youtube.com/watch?v=fvByUcN4sHs)
-     - [Extreme Performance at Cloud Scale (ElastiCache) - RedisConf 2019](https://www.youtube.com/watch?v=CQj0sASECr8)
      - [Benchmarking Redis](https://www.youtube.com/watch?v=PPydnyFt8zY)
      - [Redis benchmark in native Linux mode, Linux VM, and Docker container](https://www.youtube.com/watch?v=Qow-sXNM0pQ)
      - [Redis Reliability, Performance & Innovation](https://www.youtube.com/watch?v=A5nvOuUjOjY)
@@ -192,7 +192,6 @@
      - [Benchmarking Redis By Itself and Versus Other NoSQL Databases](https://www.youtube.com/watch?v=aotCPUtahDU)
      - [Redis on NVMe SSD](https://www.youtube.com/watch?v=Zi3b9wHhrx4)
    - #### Security
-     - [A Brief History of Encrypting Your Redis Traffic - RedisConf 2020](https://www.youtube.com/watch?v=ula3JoQXbtE)
      - [Exploiting Unauthenticated Redis - TryHackMe!](https://www.youtube.com/watch?v=LVlQmRM6DZ0)
      - [New Security Features in Redis 6 Open Source](https://www.youtube.com/watch?v=57SgF5iht8Y)
      - [Practical Use Cases for Access Control Lists in Redis 6](https://www.youtube.com/watch?v=BGoBM-Bl2UI)
