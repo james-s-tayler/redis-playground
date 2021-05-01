@@ -1,6 +1,6 @@
 # redis-playground
 
-## Talks
+## 150+ Talks on Redis
  - ### Use Cases
    - #### TL;DR
      - [Redis: Swiss army knife](https://www.youtube.com/watch?v=Pf47bR94Brw)
