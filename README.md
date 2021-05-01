@@ -33,6 +33,7 @@
    - [Designing a Redis Client for Humans](https://www.youtube.com/watch?v=zMGYz5YKYts)
    - [History of Redis Replication and Future Prospects](https://www.youtube.com/watch?v=T1htSDCYMPY)
    - [Redis Lua Scripts](https://www.youtube.com/watch?v=eReTl8NhHCs)
+   - [Lessons Learned Running The Redis Open Source Project For 8 Years - Antirez](https://www.youtube.com/watch?v=seLT7M3OAgk)
  - ### Redis In Production
    - #### War Stories
      - [Learn Redis the hard way... in production - DEVit 2017](https://www.youtube.com/watch?v=PHsx0Fy-knA)
