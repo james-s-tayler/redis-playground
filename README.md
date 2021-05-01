@@ -197,7 +197,8 @@
      - [Practical Use Cases for Access Control Lists in Redis 6](https://www.youtube.com/watch?v=BGoBM-Bl2UI)
      - [Secure Redis Cluster at Box](https://www.youtube.com/watch?v=W1FICEpaQ1A)
      - [Hack The Box: Postman Walkthrough [Redis, SSH, Webmin Exploit]](https://www.youtube.com/watch?v=rR9AUjLnM1Q)
-   - #### Monitoring
+   - #### Monitoring / Tooling
      - [RedisInsight - RedisConf 2020](https://www.youtube.com/watch?v=HBC3OSYOgj0)
      - [RedisInsight - A FREE Robust GUI Tool to Monitor Redis Data](https://www.youtube.com/watch?v=VqPdHngkz1I)
      - [Monitoring Redis data using RedisInsight - OSConf 2020](https://www.youtube.com/watch?v=BVXFBhKeUxk)
+     - [Prometheus Exporter and Grafana with Redis](https://www.youtube.com/watch?v=5m474BwV660)
