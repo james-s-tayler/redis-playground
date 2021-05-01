@@ -13,6 +13,16 @@ services:
     networks:
      - redis-playground
 
+  redis-exporter:
+    image: oliver006/redis_exporter:latest
+    container_name: redis-exporter
+    ports:
+      - 9121:9121
+    networks:
+     - redis-playground
+    depends_on:
+     - redis
+
   backend-api:
     container_name: redis-playground-api
     ports:
@@ -29,7 +39,7 @@ services:
   
   prometheus:
     container_name: prometheus
-    image: prom/prometheus:v2.15.2
+    image: prom/prometheus:latest
     ports:
       - "9090:9090"
     volumes:
@@ -38,9 +48,19 @@ services:
     networks:
       - redis-playground
 
+  docker-exporter:
+    container_name: docker-exporter
+    image: prometheusnet/docker_exporter:latest
+    ports:
+     - "9417:9417"
+    volumes:
+     - /var/run/docker.sock:/var/run/docker.sock
+    networks:
+     - redis-playground
+
   grafana:
     container_name: grafana
-    image: grafana/grafana:6.6.1
+    image: grafana/grafana:latest
     ports:
       - "3000:3000"
     networks:

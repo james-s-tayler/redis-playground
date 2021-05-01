@@ -1,16 +1,13 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using OpenTelemetry.Trace;
+using Prometheus;
+using Prometheus.DotNetRuntime;
+using Prometheus.SystemMetrics;
 using Redis.Playground.Libs.Queue;
 using StackExchange.Redis;
 
@@ -18,9 +15,12 @@ namespace Redis.Playground.Api
 {
     public class Startup
     {
+        private static IDisposable _collector;
+        
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            _collector = DotNetRuntimeStatsBuilder.Default().StartCollecting();
         }
 
         public IConfiguration Configuration { get; }
@@ -38,13 +38,20 @@ namespace Redis.Playground.Api
             services.AddSingleton<IQueue, Queue>();
             services.AddControllers();
             services.AddOpenTelemetryTracing(
-                (builder) =>
+                builder =>
                 {
                     builder
                         .AddAspNetCoreInstrumentation()
+                        .AddHttpClientInstrumentation()
+                        .AddSqlClientInstrumentation()
                         .AddRedisInstrumentation(redisClientConnection)
                         .AddJaegerExporter();
                 });
+            
+            services.AddHttpClient("InstrumentedHttpClient")
+                    .UseHttpClientMetrics();
+            services.AddHttpContextAccessor();
+            services.AddSystemMetrics();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -58,10 +65,15 @@ namespace Redis.Playground.Api
             //app.UseHttpsRedirection();
 
             app.UseRouting();
+            app.UseHttpMetrics();
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+                endpoints.MapMetrics();
+            });
         }
     }
 }
