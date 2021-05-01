@@ -2,6 +2,8 @@
 
 ## Talks
  - ### Use Cases
+   - #### TL;DR
+     - [Redis: Swiss army knife](https://www.youtube.com/watch?v=Pf47bR94Brw) 
    - #### Caching
      - [Leveraging Redis 6 Tracking for Awesome Client-Side Caching - RedisConf 2020](https://www.youtube.com/watch?v=fcgFT1Nca14)
      - [Techniques for Synchronizing In-Memory Caches with Redis](https://www.youtube.com/watch?v=kliQLwSikO4)
@@ -34,8 +36,13 @@
      - [Redis Pub/Sub for Fast Data Ingest](https://www.youtube.com/watch?v=Zwg1C9u_3K8)
      - [High-performance messaging with Go and Redis](https://www.youtube.com/watch?v=x5__QAIxQZw)
    - #### Analytics
+     - [Redis Analytics Use Cases](https://www.youtube.com/watch?v=D06iijqAX1A)
      - [Real Time Log Analytics Using Probabilistic Data Structures in Redis](https://www.youtube.com/watch?v=ord1F0azUcQ)
-   - #### Microservices
+     - [How to Use Bloom Filters in Redis](https://www.youtube.com/watch?v=Z9_wrhdbSC4)
+     - [Inline Analytics Redis Fraud Mitigation](https://www.youtube.com/watch?v=UJk63asfgqA)
+     - [Efficient analytics with Redis Bitmaps](https://www.youtube.com/watch?v=a-BtWlU55kk)
+   - #### Microservices / Application Architecture
+     - [Implementation patterns to leverage Redis to turbo charge existing Legacy applications](https://www.youtube.com/watch?v=xQJ58dDPYL4) 
      - [Microservices and Redis: A Match made in Heaven](https://www.youtube.com/watch?v=wfyq_-tWkiY)
      - [Where is my cache? Architectural patterns for caching microservices by example](https://www.youtube.com/watch?v=BC6NvHssquI)
      - [Building Lightweight Microservices Using Redis](https://www.youtube.com/watch?v=z25CPqJMFUk)
@@ -53,7 +60,9 @@
      - [Redis Data Structures for Non-Redis Users](https://www.youtube.com/watch?v=ELk_W9BBTDU)
      - [Intro to Redis Data Structures and Pub/Sub vs Redis Streams](https://www.youtube.com/watch?v=O_jNJ32s6x8)
      - [Redis Hashes Explained](https://www.youtube.com/watch?v=-agsJUihrWw)
+     - [Redis Lists Explained](https://www.youtube.com/watch?v=202yxNkUJyE)
      - [Redis Sets Explained](https://www.youtube.com/watch?v=6Pjz819sT7M)
+     - [Redis Bitmaps Explained](https://www.youtube.com/watch?v=5fmyc5lkwD4)
      - [Redis HyperLogLog Explained](https://www.youtube.com/watch?v=UAL2dxl1fsE)
      - [Implementing a New Data Structure for Redis](https://www.youtube.com/watch?v=pmxaztRsoF4)
    - #### Modules
@@ -69,6 +78,7 @@
      - [Intro to RedisTimeSeries](https://www.youtube.com/watch?v=rXynFOrrd-Q)
      - [Time Series Data in Real Time with Redis Time Series Module - RedisConf 2018](https://www.youtube.com/watch?v=Y2VbxNOYzVE)
      - [Writing Redis Modules in Rust](https://www.youtube.com/watch?v=c1E8jxWVfoI)
+     - [Extend Redis With Modules](https://www.youtube.com/watch?v=EglSYFodaqw)
    - #### Concepts / History
      - [The Evolution of Redis Key Expiration Algorithms](https://www.youtube.com/watch?v=SyQTG0hXPxY)
      - [Anatomy of a Redis Command](https://www.youtube.com/watch?v=rgE7tZ1yH80)
@@ -113,7 +123,9 @@
      - [Redis in a Multi Tenant Environment](https://www.youtube.com/watch?v=qCBoFTjUgZw)
      - [How Roblox Keeps Millions of Users up to Date with Redis Pub/Sub - RedisConf 2017](https://www.youtube.com/watch?v=nXTxXSWBayg)
    - #### AWS ElastiCache for Redis
-     - [Building Resilient Real-Time Applications with Amazon ElastiCache for Redis - AWS Online Tech Talks](https://www.youtube.com/watch?v=dqf_c2UK_zU)  
+     - [Building Resilient Real-Time Applications with Amazon ElastiCache for Redis - AWS Online Tech Talks](https://www.youtube.com/watch?v=dqf_c2UK_zU)
+     - [Fast Data at Internet Scale with Amazon ElastiCache for Redis](https://www.youtube.com/watch?v=fyMXt2wI47E)
+     - [Enterprise-Class Security, High-Availability, & Scalability with Amazon ElastiCache](https://www.youtube.com/watch?v=cXMf4EQWtXg) 
    - #### Chaos Engineering
      - [Redis Fault Injection](https://www.youtube.com/watch?v=JL5uqkRNBJE)
      - [Ensure Redis Reliability with Gremlin, Chaos Engineering](https://www.youtube.com/watch?v=i5QpK--35_s)
