@@ -31,6 +31,8 @@
      - [Distributed Queue using Redis - DSConf 2020](https://www.youtube.com/watch?v=6mkc8XXaS-I)
      - [Fail Safe Starvation Free Durable Priority Queues in Redis](https://www.youtube.com/watch?v=TyqMM8pGWc0)
      - [Resilient Testing At Scale Using Redis Queues to Manage Concurrency](https://www.youtube.com/watch?v=S7oVdnKZlG8)
+     - [Redis Pub/Sub for Fast Data Ingest](https://www.youtube.com/watch?v=Zwg1C9u_3K8)
+     - [High-performance messaging with Go and Redis](https://www.youtube.com/watch?v=x5__QAIxQZw)
    - #### Analytics
      - [Real Time Log Analytics Using Probabilistic Data Structures in Redis](https://www.youtube.com/watch?v=ord1F0azUcQ)
    - #### Microservices
@@ -49,7 +51,10 @@
  - ### Redis Concepts / Internals
    - #### Data Structures
      - [Redis Data Structures for Non-Redis Users](https://www.youtube.com/watch?v=ELk_W9BBTDU)
+     - [Intro to Redis Data Structures and Pub/Sub vs Redis Streams](https://www.youtube.com/watch?v=O_jNJ32s6x8)
      - [Redis Hashes Explained](https://www.youtube.com/watch?v=-agsJUihrWw)
+     - [Redis Sets Explained](https://www.youtube.com/watch?v=6Pjz819sT7M)
+     - [Redis HyperLogLog Explained](https://www.youtube.com/watch?v=UAL2dxl1fsE)
      - [Implementing a New Data Structure for Redis](https://www.youtube.com/watch?v=pmxaztRsoF4)
    - #### Modules
      - [Redis Streams - Redis Day TLV 2018](https://www.youtube.com/watch?v=qXEyuUxQXZM)
@@ -59,6 +64,10 @@
      - [Redis Lua Scripts](https://www.youtube.com/watch?v=eReTl8NhHCs)
      - [RedisAI in Production](https://www.youtube.com/watch?v=20Aj12ovASE)
      - [JSON in Redis: When to use RedisJSON - Redis Day Seattle 2020](https://www.youtube.com/watch?v=zpgGkxL6ozU)
+     - [RedisGraph 2.2: The Fastest Way to Query Your Highly Connected Data in Redis](https://www.youtube.com/watch?v=JNpHba2kRGM)
+     - [A Practical Introduction to RedisGraph](https://www.youtube.com/watch?v=aGHALjV6JGc)
+     - [Intro to RedisTimeSeries](https://www.youtube.com/watch?v=rXynFOrrd-Q)
+     - [Time Series Data in Real Time with Redis Time Series Module - RedisConf 2018](https://www.youtube.com/watch?v=Y2VbxNOYzVE)
      - [Writing Redis Modules in Rust](https://www.youtube.com/watch?v=c1E8jxWVfoI)
    - #### Concepts / History
      - [The Evolution of Redis Key Expiration Algorithms](https://www.youtube.com/watch?v=SyQTG0hXPxY)
@@ -77,6 +86,7 @@
      - [What is Distributed Caching? Explained with Redis!](https://www.youtube.com/watch?v=U3RkDLtS7uY)
  - ### Redis In Production
    - #### War Stories
+     - [Anti-patterns with Redis](https://www.youtube.com/watch?v=V532pU-7zW8)
      - [Learn Redis the hard way... in production - DEVit 2017](https://www.youtube.com/watch?v=PHsx0Fy-knA)
      - [Redis: Going Beyond Simple Failover - NYC Redis Meetup 2014](https://www.youtube.com/watch?v=mNj97o513Ys)
      - [Processing 60 million messages a day using Redis: Lessons from the trenches](https://www.youtube.com/watch?v=pqB-PbxHAyg)
@@ -100,6 +110,8 @@
      - [Operationalizing Redis at Scale at Square](https://www.youtube.com/watch?v=8nyJPpbt50I)
      - [Redis at Lyft: 1,000 Instances](https://www.youtube.com/watch?v=U4WspAKekqM)
      - [Using Redis at Scale at Twitter - RedisConf 2017](https://www.youtube.com/watch?v=QznaOSk20nU)
+     - [Redis in a Multi Tenant Environment](https://www.youtube.com/watch?v=qCBoFTjUgZw)
+     - [How Roblox Keeps Millions of Users up to Date with Redis Pub/Sub - RedisConf 2017](https://www.youtube.com/watch?v=nXTxXSWBayg)
    - #### AWS ElastiCache for Redis
      - [Building Resilient Real-Time Applications with Amazon ElastiCache for Redis - AWS Online Tech Talks](https://www.youtube.com/watch?v=dqf_c2UK_zU)  
    - #### Chaos Engineering
