@@ -11,6 +11,7 @@
      - [Why Your MySQL Needs Redis](https://www.youtube.com/watch?v=_4HwUVNl9Nc)
      - [Declarative Caching with Postgres and Redis](https://www.youtube.com/watch?v=IID2LQVztIM)
      - [Improve Cache Speed at Scale - RedisConf 2020](https://www.youtube.com/watch?v=mPg20ykAFU4)
+     - [Scaling applications with Azure Redis Cache and Machine Learning](https://www.youtube.com/watch?v=NgERP5g_Nuw)
    - #### Session Management
      - [Creating a Highly Available Persistent Session Management Service - RedisConf 2020](https://www.youtube.com/watch?v=Bnq_U-eGOwc)
      - [Session Management - Redis Labs](https://www.youtube.com/watch?v=uJePLpfPsug)
@@ -35,15 +36,18 @@
      - [Resilient Testing At Scale Using Redis Queues to Manage Concurrency](https://www.youtube.com/watch?v=S7oVdnKZlG8)
      - [Redis Pub/Sub for Fast Data Ingest](https://www.youtube.com/watch?v=Zwg1C9u_3K8)
      - [High-performance messaging with Go and Redis](https://www.youtube.com/watch?v=x5__QAIxQZw)
-   - #### Analytics
+   - #### Analytics / AI
      - [Redis Analytics Use Cases](https://www.youtube.com/watch?v=D06iijqAX1A)
      - [Real Time Log Analytics Using Probabilistic Data Structures in Redis](https://www.youtube.com/watch?v=ord1F0azUcQ)
      - [How to Use Bloom Filters in Redis](https://www.youtube.com/watch?v=Z9_wrhdbSC4)
      - [Inline Analytics Redis Fraud Mitigation](https://www.youtube.com/watch?v=UJk63asfgqA)
      - [Efficient analytics with Redis Bitmaps](https://www.youtube.com/watch?v=a-BtWlU55kk)
      - [Redis as a Time Series Data Store](https://www.youtube.com/watch?v=j9-QIwJ0woE)
-   - #### Deep Learning / AI
-     - [Real-Time Redis Deep-Learned Detection at the Edge - RedisConf 2020](https://www.youtube.com/watch?v=lDYnJsX9v50) 
+     - [Making Real Time Predictive Decisions with Redis](https://www.youtube.com/watch?v=PzEWggJqAjA)
+     - [Real-Time Redis Deep-Learned Detection at the Edge - RedisConf 2020](https://www.youtube.com/watch?v=lDYnJsX9v50)
+     - [Using Redis for Schema Detection](https://www.youtube.com/watch?v=0525hq2uWlk)
+   - #### Gaming
+     - [Building Highly Concurrent, Low Latency Gaming System - Redis Day London 2019](https://www.youtube.com/watch?v=5jwuDM6Z3F8)  
    - #### Microservices / Application Architecture
      - [Implementation patterns to leverage Redis to turbo charge existing Legacy applications](https://www.youtube.com/watch?v=xQJ58dDPYL4) 
      - [Microservices and Redis: A Match made in Heaven](https://www.youtube.com/watch?v=wfyq_-tWkiY)
@@ -85,6 +89,8 @@
      - ##### RedisGraph 
        - [RedisGraph 2.2: The Fastest Way to Query Your Highly Connected Data in Redis](https://www.youtube.com/watch?v=JNpHba2kRGM)
        - [A Practical Introduction to RedisGraph](https://www.youtube.com/watch?v=aGHALjV6JGc)
+       - [Deep Dive into RedisGraph - RedisConf 2019](https://www.youtube.com/watch?v=4KS2MRccQX4)
+       - [Redis Graph - Redis Day TLV 2018](https://www.youtube.com/watch?v=HpEa2cftbnc)
      - ##### RedisTimeSeries 
        - [Intro to RedisTimeSeries](https://www.youtube.com/watch?v=rXynFOrrd-Q)
        - [Time Series Data in Real Time with Redis Time Series Module - RedisConf 2018](https://www.youtube.com/watch?v=Y2VbxNOYzVE)
@@ -136,6 +142,7 @@
      - [Using Redis at Scale at Twitter - RedisConf 2017](https://www.youtube.com/watch?v=QznaOSk20nU)
      - [Redis in a Multi Tenant Environment](https://www.youtube.com/watch?v=qCBoFTjUgZw)
      - [How Roblox Keeps Millions of Users up to Date with Redis Pub/Sub - RedisConf 2017](https://www.youtube.com/watch?v=nXTxXSWBayg)
+     - [How GAP scaled over 100x using Redis](https://www.youtube.com/watch?v=mxWUGaPKjtI)
    - #### Redis Enterprise
      - [Continuous Availability, Infinite Scaling, Secure, Cost-effective Redis - RedisConf 2017](https://www.youtube.com/watch?v=UOcluQa2XL4)
      - [Redis Enterprise Overview - Redis Day TLV 2016](https://www.youtube.com/watch?v=yk6qGCgavHY)
@@ -147,12 +154,14 @@
      - [Redis & Amazon ElastiCache: Building Real Time Apps - AWS 2019](https://www.youtube.com/watch?v=QqXRnZWRuLU)
      - [Amazon ElastiCache for Redis Global Datastore - Active-Passive Multi-Region Redis](https://www.youtube.com/watch?v=xx6X5s9uLBs)
      - [Scaling Redis Workloads with Amazon ElastiCache](https://www.youtube.com/watch?v=gPNSYnxl6Ms)
+     - [Best practices: migrating Redis clusters from Amazon EC2 to ElastiCache](https://www.youtube.com/watch?v=Rpni5uPe0uI)
    - #### Chaos Engineering
      - [Redis Fault Injection](https://www.youtube.com/watch?v=JL5uqkRNBJE)
      - [Ensure Redis Reliability with Gremlin, Chaos Engineering](https://www.youtube.com/watch?v=i5QpK--35_s)
    - #### Performance
      - [The Top Redis Metrics that Matter - DataDog 2015](https://www.youtube.com/watch?v=fvByUcN4sHs)
      - [Benchmarking Redis](https://www.youtube.com/watch?v=PPydnyFt8zY)
+     - [Redis benchmark in native Linux mode, Linux VM, and Docker container](https://www.youtube.com/watch?v=Qow-sXNM0pQ)
      - [Redis Reliability, Performance & Innovation](https://www.youtube.com/watch?v=A5nvOuUjOjY)
      - [High Performance Redis](https://www.youtube.com/watch?v=ccpEFUEzSXg)
      - [Benchmarking Redis By Itself and Versus Other NoSQL Databases](https://www.youtube.com/watch?v=aotCPUtahDU)
