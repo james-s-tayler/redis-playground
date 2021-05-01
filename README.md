@@ -41,6 +41,9 @@
      - [How to Use Bloom Filters in Redis](https://www.youtube.com/watch?v=Z9_wrhdbSC4)
      - [Inline Analytics Redis Fraud Mitigation](https://www.youtube.com/watch?v=UJk63asfgqA)
      - [Efficient analytics with Redis Bitmaps](https://www.youtube.com/watch?v=a-BtWlU55kk)
+     - [Redis as a Time Series Data Store](https://www.youtube.com/watch?v=j9-QIwJ0woE)
+   - #### Deep Learning / AI
+     - [Real-Time Redis Deep-Learned Detection at the Edge - RedisConf 2020](https://www.youtube.com/watch?v=lDYnJsX9v50) 
    - #### Microservices / Application Architecture
      - [Implementation patterns to leverage Redis to turbo charge existing Legacy applications](https://www.youtube.com/watch?v=xQJ58dDPYL4) 
      - [Microservices and Redis: A Match made in Heaven](https://www.youtube.com/watch?v=wfyq_-tWkiY)
@@ -67,19 +70,28 @@
      - [Redis HyperLogLog Explained](https://www.youtube.com/watch?v=UAL2dxl1fsE)
      - [Implementing a New Data Structure for Redis](https://www.youtube.com/watch?v=pmxaztRsoF4)
    - #### Modules
-     - [Redis Streams - Redis Day TLV 2018](https://www.youtube.com/watch?v=qXEyuUxQXZM)
-     - [Amazing User Experiences with Redis and RediSearch - RedisConf 2018](https://www.youtube.com/watch?v=B_BVmJ90X8Q)
-     - [Add Real-Time Full-Text Search to Your Web Site with RediSearch](https://www.youtube.com/watch?v=tfDdoVg_jXY)
-     - [RedisGears GA](https://www.youtube.com/watch?v=J4clHQJScZQ)
-     - [Redis Lua Scripts](https://www.youtube.com/watch?v=eReTl8NhHCs)
-     - [RedisAI in Production](https://www.youtube.com/watch?v=20Aj12ovASE)
-     - [JSON in Redis: When to use RedisJSON - Redis Day Seattle 2020](https://www.youtube.com/watch?v=zpgGkxL6ozU)
-     - [RedisGraph 2.2: The Fastest Way to Query Your Highly Connected Data in Redis](https://www.youtube.com/watch?v=JNpHba2kRGM)
-     - [A Practical Introduction to RedisGraph](https://www.youtube.com/watch?v=aGHALjV6JGc)
-     - [Intro to RedisTimeSeries](https://www.youtube.com/watch?v=rXynFOrrd-Q)
-     - [Time Series Data in Real Time with Redis Time Series Module - RedisConf 2018](https://www.youtube.com/watch?v=Y2VbxNOYzVE)
-     - [Writing Redis Modules in Rust](https://www.youtube.com/watch?v=c1E8jxWVfoI)
-     - [Extend Redis With Modules](https://www.youtube.com/watch?v=EglSYFodaqw)
+     - ##### Redis Streams 
+       - [Redis Streams - Redis Day TLV 2018](https://www.youtube.com/watch?v=qXEyuUxQXZM)
+     - ##### RediSearch
+       - [Integrating Redis with ElasticSearch](https://www.youtube.com/watch?v=2mYe4qjn304) 
+       - [Amazing User Experiences with Redis and RediSearch - RedisConf 2018](https://www.youtube.com/watch?v=B_BVmJ90X8Q)
+       - [Add Real-Time Full-Text Search to Your Web Site with RediSearch](https://www.youtube.com/watch?v=tfDdoVg_jXY)
+     - ##### Redis Gears 
+       - [RedisGears GA](https://www.youtube.com/watch?v=J4clHQJScZQ)
+     - ##### RedisAI 
+       - [RedisAI in Production](https://www.youtube.com/watch?v=20Aj12ovASE)
+     - ##### RedisJSON 
+       - [JSON in Redis: When to use RedisJSON - Redis Day Seattle 2020](https://www.youtube.com/watch?v=zpgGkxL6ozU)
+     - ##### RedisGraph 
+       - [RedisGraph 2.2: The Fastest Way to Query Your Highly Connected Data in Redis](https://www.youtube.com/watch?v=JNpHba2kRGM)
+       - [A Practical Introduction to RedisGraph](https://www.youtube.com/watch?v=aGHALjV6JGc)
+     - ##### RedisTimeSeries 
+       - [Intro to RedisTimeSeries](https://www.youtube.com/watch?v=rXynFOrrd-Q)
+       - [Time Series Data in Real Time with Redis Time Series Module - RedisConf 2018](https://www.youtube.com/watch?v=Y2VbxNOYzVE)
+     - ##### Extending Redis 
+       - [Redis Lua Scripts](https://www.youtube.com/watch?v=eReTl8NhHCs)
+       - [Writing Redis Modules in Rust](https://www.youtube.com/watch?v=c1E8jxWVfoI)
+       - [Extend Redis With Modules](https://www.youtube.com/watch?v=EglSYFodaqw)
    - #### Concepts / History
      - [The Evolution of Redis Key Expiration Algorithms](https://www.youtube.com/watch?v=SyQTG0hXPxY)
      - [Anatomy of a Redis Command](https://www.youtube.com/watch?v=rgE7tZ1yH80)
@@ -125,6 +137,7 @@
      - [Redis in a Multi Tenant Environment](https://www.youtube.com/watch?v=qCBoFTjUgZw)
      - [How Roblox Keeps Millions of Users up to Date with Redis Pub/Sub - RedisConf 2017](https://www.youtube.com/watch?v=nXTxXSWBayg)
    - #### Redis Enterprise
+     - [Continuous Availability, Infinite Scaling, Secure, Cost-effective Redis - RedisConf 2017](https://www.youtube.com/watch?v=UOcluQa2XL4)
      - [Redis Enterprise Overview - Redis Day TLV 2016](https://www.youtube.com/watch?v=yk6qGCgavHY)
      - [Troubleshooting Redis Performance Insights w/ Redis Enterprise Cluster](https://www.youtube.com/watch?v=Ox6mRDaqnUE)
    - #### AWS ElastiCache for Redis
@@ -133,6 +146,7 @@
      - [Enterprise-Class Security, High-Availability, & Scalability with Amazon ElastiCache](https://www.youtube.com/watch?v=cXMf4EQWtXg)
      - [Redis & Amazon ElastiCache: Building Real Time Apps - AWS 2019](https://www.youtube.com/watch?v=QqXRnZWRuLU)
      - [Amazon ElastiCache for Redis Global Datastore - Active-Passive Multi-Region Redis](https://www.youtube.com/watch?v=xx6X5s9uLBs)
+     - [Scaling Redis Workloads with Amazon ElastiCache](https://www.youtube.com/watch?v=gPNSYnxl6Ms)
    - #### Chaos Engineering
      - [Redis Fault Injection](https://www.youtube.com/watch?v=JL5uqkRNBJE)
      - [Ensure Redis Reliability with Gremlin, Chaos Engineering](https://www.youtube.com/watch?v=i5QpK--35_s)
