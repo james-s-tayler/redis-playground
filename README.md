@@ -54,9 +54,11 @@
    - #### Modules
      - [Redis Streams - Redis Day TLV 2018](https://www.youtube.com/watch?v=qXEyuUxQXZM)
      - [Amazing User Experiences with Redis and RediSearch - RedisConf 2018](https://www.youtube.com/watch?v=B_BVmJ90X8Q)
+     - [Add Real-Time Full-Text Search to Your Web Site with RediSearch](https://www.youtube.com/watch?v=tfDdoVg_jXY)
      - [RedisGears GA](https://www.youtube.com/watch?v=J4clHQJScZQ)
      - [Redis Lua Scripts](https://www.youtube.com/watch?v=eReTl8NhHCs)
      - [RedisAI in Production](https://www.youtube.com/watch?v=20Aj12ovASE)
+     - [JSON in Redis: When to use RedisJSON - Redis Day Seattle 2020](https://www.youtube.com/watch?v=zpgGkxL6ozU)
      - [Writing Redis Modules in Rust](https://www.youtube.com/watch?v=c1E8jxWVfoI)
    - #### Concepts / History
      - [The Evolution of Redis Key Expiration Algorithms](https://www.youtube.com/watch?v=SyQTG0hXPxY)
