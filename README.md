@@ -62,6 +62,7 @@
      - [Redis Hashes Explained](https://www.youtube.com/watch?v=-agsJUihrWw)
      - [Redis Lists Explained](https://www.youtube.com/watch?v=202yxNkUJyE)
      - [Redis Sets Explained](https://www.youtube.com/watch?v=6Pjz819sT7M)
+     - [Redis Sorted Sets Explained](https://www.youtube.com/watch?v=XqSK-4oEoAc)
      - [Redis Bitmaps Explained](https://www.youtube.com/watch?v=5fmyc5lkwD4)
      - [Redis HyperLogLog Explained](https://www.youtube.com/watch?v=UAL2dxl1fsE)
      - [Implementing a New Data Structure for Redis](https://www.youtube.com/watch?v=pmxaztRsoF4)
@@ -104,6 +105,7 @@
      - [Redis Networking Nerd Down](https://www.youtube.com/watch?v=3h316lNYMyQ)
      - [Redis is Dead Long live Redis!](https://www.youtube.com/watch?v=NymIgA7Wa78)
    - #### High Availability / Scaling
+     - [Build and Deploy Containerized Redis Cache for High Availability and Performance](https://www.youtube.com/watch?v=LMphQpep3CQ)
      - [Scaling Redis To 1M Ops/Sec](https://www.youtube.com/watch?v=55TFuBMFWns)
      - [Meeting Service Level Objectives at Scale with HAProxy and Redis](https://www.youtube.com/watch?v=h8blgoqZEIM)
      - [Scaling Your Redis Workloads with Redis Cluster - AWS Online Tech Talks](https://www.youtube.com/watch?v=3Ovx5vJ17ws)
@@ -129,6 +131,11 @@
    - #### Chaos Engineering
      - [Redis Fault Injection](https://www.youtube.com/watch?v=JL5uqkRNBJE)
      - [Ensure Redis Reliability with Gremlin, Chaos Engineering](https://www.youtube.com/watch?v=i5QpK--35_s)
+   - #### Performance
+     - [Benchmarking Redis](https://www.youtube.com/watch?v=PPydnyFt8zY)
+     - [Redis Reliability, Performance & Innovation](https://www.youtube.com/watch?v=A5nvOuUjOjY)
+     - [High Performance Redis](https://www.youtube.com/watch?v=ccpEFUEzSXg)
+     - [Benchmarking Redis By Itself and Versus Other NoSQL Databases](https://www.youtube.com/watch?v=aotCPUtahDU)
    - #### Security
      - [A Brief History of Encrypting Your Redis Traffic - RedisConf 2020](https://www.youtube.com/watch?v=ula3JoQXbtE)
      - [Exploiting Unauthenticated Redis - TryHackMe!](https://www.youtube.com/watch?v=LVlQmRM6DZ0)
