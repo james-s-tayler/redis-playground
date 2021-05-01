@@ -3,8 +3,9 @@
 ## Talks
  - ### Use Cases
    - #### TL;DR
-     - [Redis: Swiss army knife](https://www.youtube.com/watch?v=Pf47bR94Brw) 
+     - [Redis: Swiss army knife](https://www.youtube.com/watch?v=Pf47bR94Brw)
    - #### Caching
+     - [Techniques to Improve Cache Speed](https://www.youtube.com/watch?v=QkUz2_kRV9g)
      - [Leveraging Redis 6 Tracking for Awesome Client-Side Caching - RedisConf 2020](https://www.youtube.com/watch?v=fcgFT1Nca14)
      - [Techniques for Synchronizing In-Memory Caches with Redis](https://www.youtube.com/watch?v=kliQLwSikO4)
      - [Increase Application Performance with SQL Auto Caching; No Code Changes - RedisConf 2018](https://www.youtube.com/watch?v=coq4rHW1Iu8)
@@ -28,10 +29,11 @@
      - [API Rate Limits with Spring Boot and Redis](https://www.youtube.com/watch?v=MHxRdXLsZkg)
      - [How to Protect Your APIs with Rate Limiting and Metering](https://www.youtube.com/watch?v=4_erD-HKu3o)
      - [Approaches for application request throttling - DotNext](https://www.youtube.com/watch?v=Q53eR7mFsRo)
-   - #### Queues
+   - #### Queues / Messaging
      - [Redis as a Message Bus](https://www.youtube.com/watch?v=qB474R-JG14)
      - [Build a Message Bus with Redis Streams and FastAPI](https://www.youtube.com/watch?v=LHOjW42-A40)
      - [Building Scalable, Distributed Job Queues with Redis - RakuConf 2012](https://www.youtube.com/watch?v=ztyyn7hmcJo)
+     - [Delayed Message Processing with Redis Streams](https://www.youtube.com/watch?v=hkGYRYe5NE8)
      - [Distributed Queue using Redis - DSConf 2020](https://www.youtube.com/watch?v=6mkc8XXaS-I)
      - [Fail Safe Starvation Free Durable Priority Queues in Redis](https://www.youtube.com/watch?v=TyqMM8pGWc0)
      - [Resilient Testing At Scale Using Redis Queues to Manage Concurrency](https://www.youtube.com/watch?v=S7oVdnKZlG8)
@@ -48,9 +50,10 @@
      - [Making Real Time Predictive Decisions with Redis](https://www.youtube.com/watch?v=PzEWggJqAjA)
      - [Real-Time Redis Deep-Learned Detection at the Edge - RedisConf 2020](https://www.youtube.com/watch?v=lDYnJsX9v50)
      - [Using Redis for Schema Detection](https://www.youtube.com/watch?v=0525hq2uWlk)
-   - #### Gaming
+   - #### Other
      - [Building Highly Concurrent, Low Latency Gaming System - Redis Day London 2019](https://www.youtube.com/watch?v=5jwuDM6Z3F8)
      - [Using Redis and RediSearch Module to Store & Search Volatile Data - RedisConf 2017](https://www.youtube.com/watch?v=Zsz1FhLQ2cM)
+     - [Unorthodox Redis Use Cases](https://www.youtube.com/watch?v=u-p3Q1Uts1o)
    - #### Microservices / Application Architecture
      - [Implementation patterns to leverage Redis to turbo charge existing Legacy applications](https://www.youtube.com/watch?v=xQJ58dDPYL4) 
      - [Microservices and Redis: A Match made in Heaven](https://www.youtube.com/watch?v=wfyq_-tWkiY)
@@ -111,6 +114,7 @@
      - [The Design of Redis Streams - Antirez](https://www.youtube.com/watch?v=Ty1rQuRJijk)
      - [Lessons Learned Running The Redis Open Source Project For 8 Years - Antirez](https://www.youtube.com/watch?v=seLT7M3OAgk)
      - [Redis: Client side caching "broadcasting mode"](https://www.youtube.com/watch?v=TW9uFIJ9xkc)
+     - [A Brief History of Encrypting Your Redis Traffic](https://www.youtube.com/watch?v=ula3JoQXbtE)
    - #### Optimization 
      - [Redis Memory Optimization](https://www.youtube.com/watch?v=0u5WqD0Q8z4)
      - [Redis Memory Optimization - RedisConf 2018](https://www.youtube.com/watch?v=h7Onll-9fuM)
@@ -184,6 +188,7 @@
      - [New Security Features in Redis 6 Open Source](https://www.youtube.com/watch?v=57SgF5iht8Y)
      - [Practical Use Cases for Access Control Lists in Redis 6](https://www.youtube.com/watch?v=BGoBM-Bl2UI)
      - [Secure Redis Cluster at Box](https://www.youtube.com/watch?v=W1FICEpaQ1A)
+     - [Hack The Box: Postman Walkthrough [Redis, SSH, Webmin Exploit]](https://www.youtube.com/watch?v=rR9AUjLnM1Q)
    - #### Monitoring
      - [RedisInsight - RedisConf 2020](https://www.youtube.com/watch?v=HBC3OSYOgj0)
      - [RedisInsight - A FREE Robust GUI Tool to Monitor Redis Data](https://www.youtube.com/watch?v=VqPdHngkz1I)
