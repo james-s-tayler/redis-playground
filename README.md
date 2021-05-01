@@ -40,6 +40,7 @@
      - [Redis Pub/Sub for Fast Data Ingest](https://www.youtube.com/watch?v=Zwg1C9u_3K8)
      - [High-performance messaging with Go and Redis](https://www.youtube.com/watch?v=x5__QAIxQZw)
      - [Cancellable Timeout Queues, A Use Pattern](https://www.youtube.com/watch?v=tcVAqmpdm1I)
+     - [Increasing Message Delivery Rates with Redis](https://www.youtube.com/watch?v=_XcN0e43dHM)
    - #### Analytics / AI
      - [Redis Analytics Use Cases](https://www.youtube.com/watch?v=D06iijqAX1A)
      - [Real Time Log Analytics Using Probabilistic Data Structures in Redis](https://www.youtube.com/watch?v=ord1F0azUcQ)
@@ -72,6 +73,7 @@
  - ### Redis Concepts / Internals
    - #### Data Structures
      - [Redis Data Structures for Non-Redis Users](https://www.youtube.com/watch?v=ELk_W9BBTDU)
+     - [Intro to Redis Commands and Data Structures](https://www.youtube.com/watch?v=Z04lIh23yuI)
      - [Intro to Redis Data Structures and Pub/Sub vs Redis Streams](https://www.youtube.com/watch?v=O_jNJ32s6x8)
      - [Redis Hashes Explained](https://www.youtube.com/watch?v=-agsJUihrWw)
      - [Redis Lists Explained](https://www.youtube.com/watch?v=202yxNkUJyE)
@@ -87,17 +89,21 @@
        - [Integrating Redis with ElasticSearch](https://www.youtube.com/watch?v=2mYe4qjn304) 
        - [Amazing User Experiences with Redis and RediSearch - RedisConf 2018](https://www.youtube.com/watch?v=B_BVmJ90X8Q)
        - [Add Real-Time Full-Text Search to Your Web Site with RediSearch](https://www.youtube.com/watch?v=tfDdoVg_jXY)
+       - [RediSearch Aggregation Capabilities](https://www.youtube.com/watch?v=UHZ_VFoRHcQ)
+       - [Getting Started With GeoCoding With Redis](https://www.youtube.com/watch?v=0dvR9I9kK9g)
      - ##### Redis Gears 
        - [RedisGears GA](https://www.youtube.com/watch?v=J4clHQJScZQ)
      - ##### RedisAI 
        - [RedisAI in Production](https://www.youtube.com/watch?v=20Aj12ovASE)
      - ##### RedisJSON 
        - [JSON in Redis: When to use RedisJSON - Redis Day Seattle 2020](https://www.youtube.com/watch?v=zpgGkxL6ozU)
+       - [ReJSON = {"id": "old dog", "activity": "new trick"}](https://www.youtube.com/watch?v=NLRbq2FtcIk)
      - ##### RedisGraph 
        - [RedisGraph 2.2: The Fastest Way to Query Your Highly Connected Data in Redis](https://www.youtube.com/watch?v=JNpHba2kRGM)
        - [A Practical Introduction to RedisGraph](https://www.youtube.com/watch?v=aGHALjV6JGc)
        - [Deep Dive into RedisGraph - RedisConf 2019](https://www.youtube.com/watch?v=4KS2MRccQX4)
        - [Redis Graph - Redis Day TLV 2018](https://www.youtube.com/watch?v=HpEa2cftbnc)
+       - [RedisGraph and it's use cases](https://www.youtube.com/watch?v=d3upsk6Ra18)
      - ##### RedisTimeSeries 
        - [Intro to RedisTimeSeries](https://www.youtube.com/watch?v=rXynFOrrd-Q)
        - [Time Series Data in Real Time with Redis Time Series Module - RedisConf 2018](https://www.youtube.com/watch?v=Y2VbxNOYzVE)
