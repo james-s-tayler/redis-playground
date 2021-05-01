@@ -50,6 +50,7 @@
      - [Making Real Time Predictive Decisions with Redis](https://www.youtube.com/watch?v=PzEWggJqAjA)
      - [Real-Time Redis Deep-Learned Detection at the Edge - RedisConf 2020](https://www.youtube.com/watch?v=lDYnJsX9v50)
      - [Using Redis for Schema Detection](https://www.youtube.com/watch?v=0525hq2uWlk)
+     - [Identifying Fraudulent Online Behavior](https://www.youtube.com/watch?v=y6vY2-7UOZk)
    - #### Other
      - [Building Highly Concurrent, Low Latency Gaming System - Redis Day London 2019](https://www.youtube.com/watch?v=5jwuDM6Z3F8)
      - [Using Redis and RediSearch Module to Store & Search Volatile Data - RedisConf 2017](https://www.youtube.com/watch?v=Zsz1FhLQ2cM)
