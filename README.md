@@ -122,6 +122,7 @@
      - [Lessons Learned Running The Redis Open Source Project For 8 Years - Antirez](https://www.youtube.com/watch?v=seLT7M3OAgk)
      - [Redis: Client side caching "broadcasting mode"](https://www.youtube.com/watch?v=TW9uFIJ9xkc)
      - [A Brief History of Encrypting Your Redis Traffic](https://www.youtube.com/watch?v=ula3JoQXbtE)
+     - [What Happens When Redis Runs Out of Memory](https://www.youtube.com/watch?v=W8IEzoxRMz4)
    - #### Optimization 
      - [Redis Memory Optimization](https://www.youtube.com/watch?v=0u5WqD0Q8z4)
      - [Redis Memory Optimization - RedisConf 2018](https://www.youtube.com/watch?v=h7Onll-9fuM)
