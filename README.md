@@ -12,7 +12,15 @@
      - [Rate-Limiting 30M Requests a Day - Redis Day Bengaluru 2020](https://www.youtube.com/watch?v=rZ8mhTMDoCU)
      - [Protecting your API with Redis](https://www.youtube.com/watch?v=HnSb8DFU5UA)
      - [Rate Limiting with Redis](https://www.youtube.com/watch?v=CRGPbCbRTHA)
+     - [Rate limiting/monitoring with Redis - 2014](https://www.youtube.com/watch?v=lOOBH9fAfPs)
+     - [Rate limiting APIs with Redis + Express.js](https://www.youtube.com/watch?v=_DqfiW08HkA)
+     - [Throttling requests before they hit your application](https://www.youtube.com/watch?v=MHYHbGPzZtw)
+     - [High Volume Ratelimiting with Redis](https://www.youtube.com/watch?v=p5-mS_L6S3Y)
+     - [API Rate Limits with Spring Boot and Redis](https://www.youtube.com/watch?v=MHxRdXLsZkg)
+     - [How to Protect Your APIs with Rate Limiting and Metering](https://www.youtube.com/watch?v=4_erD-HKu3o)
+     - [Approaches for application request throttling - DotNext](https://www.youtube.com/watch?v=Q53eR7mFsRo)
    - #### Queues
+     - [Building Scalable, Distributed Job Queues with Redis - RakuConf 2012](https://www.youtube.com/watch?v=ztyyn7hmcJo)
      - [Distributed Queue using Redis - DSConf 2020](https://www.youtube.com/watch?v=6mkc8XXaS-I)
      - [Fail Safe Starvation Free Durable Priority Queues in Redis](https://www.youtube.com/watch?v=TyqMM8pGWc0)
      - [Resilient Testing At Scale Using Redis Queues to Manage Concurrency](https://www.youtube.com/watch?v=S7oVdnKZlG8)
@@ -36,6 +44,7 @@
      - [Preventing Cache Stampede with Redis and Xfetch](https://www.youtube.com/watch?v=1sKn4gWesTw)
      - [How Shopify is Scaling Up Its Redis Message Queues](https://www.youtube.com/watch?v=hu6Q6s0432A)
      - [Operationalizing Redis at Scale at Square](https://www.youtube.com/watch?v=8nyJPpbt50I)
+     - [Redis at Lyft: 1,000 Instances](https://www.youtube.com/watch?v=U4WspAKekqM)
    - #### Chaos Engineering
      - [Redis Fault Injection](https://www.youtube.com/watch?v=JL5uqkRNBJE)
      - [Ensure Redis Reliability with Gremlin, Chaos Engineering](https://www.youtube.com/watch?v=i5QpK--35_s)
