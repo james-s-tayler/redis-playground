@@ -94,7 +94,7 @@
    - #### Distributed Caching System Design Concepts
      - [Redis system design | Distributed cache System design](https://www.youtube.com/watch?v=DUbEgNw-F9c)
      - [Caching Architectures | Microservices Caching Patterns | System Design Primer](https://www.youtube.com/watch?v=0x-ZV_vP73k)
-     - [What is Distributed Caching? Explained with Redis!](https://www.youtube.com/watch?v=U3RkDLtS7uY)
+     - [What is Distributed Caching? Explained with Redis!](https://www.youtube.com/watch?v=U3RkDLtS7uY)  
  - ### Redis In Production
    - #### War Stories
      - [Anti-patterns with Redis](https://www.youtube.com/watch?v=V532pU-7zW8)
@@ -124,18 +124,25 @@
      - [Using Redis at Scale at Twitter - RedisConf 2017](https://www.youtube.com/watch?v=QznaOSk20nU)
      - [Redis in a Multi Tenant Environment](https://www.youtube.com/watch?v=qCBoFTjUgZw)
      - [How Roblox Keeps Millions of Users up to Date with Redis Pub/Sub - RedisConf 2017](https://www.youtube.com/watch?v=nXTxXSWBayg)
+   - #### Redis Enterprise
+     - [Redis Enterprise Overview - Redis Day TLV 2016](https://www.youtube.com/watch?v=yk6qGCgavHY)
+     - [Troubleshooting Redis Performance Insights w/ Redis Enterprise Cluster](https://www.youtube.com/watch?v=Ox6mRDaqnUE)
    - #### AWS ElastiCache for Redis
      - [Building Resilient Real-Time Applications with Amazon ElastiCache for Redis - AWS Online Tech Talks](https://www.youtube.com/watch?v=dqf_c2UK_zU)
      - [Fast Data at Internet Scale with Amazon ElastiCache for Redis](https://www.youtube.com/watch?v=fyMXt2wI47E)
-     - [Enterprise-Class Security, High-Availability, & Scalability with Amazon ElastiCache](https://www.youtube.com/watch?v=cXMf4EQWtXg) 
+     - [Enterprise-Class Security, High-Availability, & Scalability with Amazon ElastiCache](https://www.youtube.com/watch?v=cXMf4EQWtXg)
+     - [Redis & Amazon ElastiCache: Building Real Time Apps - AWS 2019](https://www.youtube.com/watch?v=QqXRnZWRuLU)
+     - [Amazon ElastiCache for Redis Global Datastore - Active-Passive Multi-Region Redis](https://www.youtube.com/watch?v=xx6X5s9uLBs)
    - #### Chaos Engineering
      - [Redis Fault Injection](https://www.youtube.com/watch?v=JL5uqkRNBJE)
      - [Ensure Redis Reliability with Gremlin, Chaos Engineering](https://www.youtube.com/watch?v=i5QpK--35_s)
    - #### Performance
+     - [The Top Redis Metrics that Matter - DataDog 2015](https://www.youtube.com/watch?v=fvByUcN4sHs)
      - [Benchmarking Redis](https://www.youtube.com/watch?v=PPydnyFt8zY)
      - [Redis Reliability, Performance & Innovation](https://www.youtube.com/watch?v=A5nvOuUjOjY)
      - [High Performance Redis](https://www.youtube.com/watch?v=ccpEFUEzSXg)
      - [Benchmarking Redis By Itself and Versus Other NoSQL Databases](https://www.youtube.com/watch?v=aotCPUtahDU)
+     - [Redis on NVMe SSD](https://www.youtube.com/watch?v=Zi3b9wHhrx4)
    - #### Security
      - [A Brief History of Encrypting Your Redis Traffic - RedisConf 2020](https://www.youtube.com/watch?v=ula3JoQXbtE)
      - [Exploiting Unauthenticated Redis - TryHackMe!](https://www.youtube.com/watch?v=LVlQmRM6DZ0)
