@@ -28,26 +28,39 @@
    - [Redis Data Structures for Non-Redis Users](https://www.youtube.com/watch?v=ELk_W9BBTDU)
    - [Implementing a New Data Structure for Redis](https://www.youtube.com/watch?v=pmxaztRsoF4)
    - [Redis Memory Optimization](https://www.youtube.com/watch?v=0u5WqD0Q8z4)
+   - [The Evolution of Redis Key Expiration Algorithms](https://www.youtube.com/watch?v=SyQTG0hXPxY)
+   - [Anatomy of a Redis Command](https://www.youtube.com/watch?v=rgE7tZ1yH80)
+   - [Designing a Redis Client for Humans](https://www.youtube.com/watch?v=zMGYz5YKYts)
+   - [History of Redis Replication and Future Prospects](https://www.youtube.com/watch?v=T1htSDCYMPY)
+   - [Redis Lua Scripts](https://www.youtube.com/watch?v=eReTl8NhHCs)
  - ### Redis In Production
-   - #### High Availability / Scaling / Case Studies / War Stories
+   - #### War Stories
      - [Learn Redis the hard way... in production - DEVit 2017](https://www.youtube.com/watch?v=PHsx0Fy-knA)
+     - [Redis: Going Beyond Simple Failover - NYC Redis Meetup 2014](https://www.youtube.com/watch?v=mNj97o513Ys)
+     - [Processing 60 million messages a day using Redis: Lessons from the trenches](https://www.youtube.com/watch?v=pqB-PbxHAyg)
+     - [Troubleshooting Redis](https://www.youtube.com/watch?v=7ydU97NOZb4)
+     - [Redis Networking Nerd Down](https://www.youtube.com/watch?v=3h316lNYMyQ)
+   - #### High Availability / Scaling
      - [Scaling Redis To 1M Ops/Sec](https://www.youtube.com/watch?v=55TFuBMFWns)
+     - [Meeting Service Level Objectives at Scale with HAProxy and Redis](https://www.youtube.com/watch?v=h8blgoqZEIM)
      - [Scaling Your Redis Workloads with Redis Cluster - AWS Online Tech Talks](https://www.youtube.com/watch?v=3Ovx5vJ17ws)
      - [App Sharded Redis w/Sentinel vs Redis Cluster - RedisConf 2019](https://www.youtube.com/watch?v=dQo8Pb7KTrg)
      - [Multi Master Redis: A Deep Dive - RedisConf 2017](https://www.youtube.com/watch?v=9QChf0jIFgY)
-     - [Redis Networking Nerd Down](https://www.youtube.com/watch?v=3h316lNYMyQ)
      - [Deep Dive into Redis Replication - RedisConf 2019](https://www.youtube.com/watch?v=esbRryo0Ty8)
+   - #### Case Studies 
      - [Airbnb's Journey from Self-Managed Redis to ElastiCache for Redis - AWS re:Invent 2018](https://www.youtube.com/watch?v=eyd_8efUCwM)
-     - [Case Study: Redis Cluster at Flickr Yahoo! - RedisConf 2017](https://www.youtube.com/watch?v=L5WSTbPpB_M)
+     - [Redis Cluster at Flickr Yahoo! - RedisConf 2017](https://www.youtube.com/watch?v=L5WSTbPpB_M)
      - [Redis at LINE, 25 Billion Messages Per Day - RedisConf 2018](https://www.youtube.com/watch?v=IxTUXuoIWro)
      - [Monitoring and Scaling Redis at DataDog](https://www.youtube.com/watch?v=7tL2Eoiab7U)
      - [Preventing Cache Stampede with Redis and Xfetch](https://www.youtube.com/watch?v=1sKn4gWesTw)
      - [How Shopify is Scaling Up Its Redis Message Queues](https://www.youtube.com/watch?v=hu6Q6s0432A)
      - [Operationalizing Redis at Scale at Square](https://www.youtube.com/watch?v=8nyJPpbt50I)
      - [Redis at Lyft: 1,000 Instances](https://www.youtube.com/watch?v=U4WspAKekqM)
+     - [Using Redis at Scale at Twitter - RedisConf 2017](https://www.youtube.com/watch?v=QznaOSk20nU)
    - #### Chaos Engineering
      - [Redis Fault Injection](https://www.youtube.com/watch?v=JL5uqkRNBJE)
      - [Ensure Redis Reliability with Gremlin, Chaos Engineering](https://www.youtube.com/watch?v=i5QpK--35_s)
    - #### Security
      - [A Brief History of Encrypting Your Redis Traffic - RedisConf 2020](https://www.youtube.com/watch?v=ula3JoQXbtE)
      - [Exploiting Unauthenticated Redis - TryHackMe!](https://www.youtube.com/watch?v=LVlQmRM6DZ0)
+     - [New Security Features in Redis 6 Open Source](https://www.youtube.com/watch?v=57SgF5iht8Y)
