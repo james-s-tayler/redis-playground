@@ -84,7 +84,7 @@ services:
       - redis-playground
     volumes:
       - redis-playground-prometheus_grafana:/var/lib/grafana
-      - ./grafana/dashboards.yml:/etc/grafana/provisioning/dashboards/redis.yaml
+      - ./grafana/dashboards.yml:/etc/grafana/provisioning/dashboards/dashboards.yaml
       - ./grafana/datasources.yml:/etc/grafana/provisioning/datasources/prometheus.yaml
       - ./grafana/dashboards:/dashboards
     environment:
