@@ -84,8 +84,8 @@ services:
       - redis-playground
     volumes:
       - redis-playground-prometheus_grafana:/var/lib/grafana
-      - ./grafana/dashboards.yml:/etc/grafana/provisioning/dashboards/dashboards.yaml
-      - ./grafana/datasources.yml:/etc/grafana/provisioning/datasources/prometheus.yaml
+      - ./grafana/dashboards/dashboards.yml:/etc/grafana/provisioning/dashboards/dashboards.yaml
+      - ./grafana/datasources/datasources.yml:/etc/grafana/provisioning/datasources/prometheus.yaml
       - ./grafana/dashboards:/dashboards
     environment:
       # https://grafana.com/plugins/flant-statusmap-panel
