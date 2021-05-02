@@ -1,5 +1,5 @@
 # Redis Playground
-# An observable dev environment for understanding Redis
+#### An observable dev environment for understanding Redis
 
 ## Getting Started
 
