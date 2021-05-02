@@ -1,4 +1,8 @@
-# redis-playground
+# Redis Playground - an observable dev environment for understanding Redis
+
+## Getting Started
+
+ `./start.sh`
 
 ## 150+ Talks on Redis
  - ### Use Cases
