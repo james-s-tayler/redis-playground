@@ -3,7 +3,7 @@ global:
   # but still close enough to capture metrics that were refreshed within this interval
   # This value determines the range that we use with rate():
   # https://www.robustperception.io/what-range-should-i-use-with-rate
-  scrape_interval: 15s # Default is every 1 minute.
+  scrape_interval: 5s # Default is every 1 minute.
   # scrape_timeout: 10s # Default is 10 seconds.
   # evaluation_interval: 60s # Default is every 1 minute.
 
