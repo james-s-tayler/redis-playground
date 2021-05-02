@@ -10,13 +10,14 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
    - http://localhost:5000/Queue/Push/{queueName}/{messageCount}
    - http://localhost:5000/Queue/Size/{queueName}
  - Grafana - http://localhost:3000 (admin/admin)
-   - Import the following dashboards
-     - [Redis Dashboard for Prometheus Redis Exporter 1.x](https://grafana.com/grafana/dashboards/11692)
-     - [prometheus-net - AspNetCore summary](https://grafana.com/grafana/dashboards/10427)
-     - [prometheus-net.DotNetRuntime CLR summary](https://grafana.com/grafana/dashboards/13399)
-     - [ASP.NET Core - controller summary](https://grafana.com/grafana/dashboards/10915)
-     - [Docker - docker-compose containers summary](https://grafana.com/grafana/dashboards/11467)
  - Jaeger UI - http://localhost:16686
+ - Prometheus - http://localhost:9090
+ - Grafana Dashboards
+   - [Redis Dashboard for Prometheus Redis Exporter 1.x](https://grafana.com/grafana/dashboards/11692)
+   - [prometheus-net - AspNetCore summary](https://grafana.com/grafana/dashboards/10427)
+   - [prometheus-net.DotNetRuntime CLR summary](https://grafana.com/grafana/dashboards/13399)
+   - [ASP.NET Core - controller summary](https://grafana.com/grafana/dashboards/10915)
+   - [Docker - docker-compose containers summary](https://grafana.com/grafana/dashboards/11467)
 
 ## 150+ Talks on Redis
  - ### Use Cases
