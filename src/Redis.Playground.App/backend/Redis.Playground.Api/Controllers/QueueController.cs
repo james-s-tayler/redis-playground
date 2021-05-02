@@ -32,7 +32,7 @@ namespace Redis.Playground.Api.Controllers
         }
         
         [HttpGet("Push/{name}/{count}")]
-        public async Task<string> Push(string name, int count, bool useTpl = false)
+        public async Task<string> Push(string name, int count, bool fireAndForget = true, bool useTpl = false)
         {
             if (string.IsNullOrEmpty(name))
                 throw new ArgumentNullException(nameof(name));
@@ -47,7 +47,7 @@ namespace Redis.Playground.Api.Controllers
                 Task[] pushCommands = new Task[count];
                 for (var i = 0; i < count; i++)
                 {
-                    pushCommands[i] = _queue.Push(name, DateTimeOffset.UtcNow.ToUnixTimeMilliseconds().ToString());
+                    pushCommands[i] = _queue.Push(name, DateTimeOffset.UtcNow.ToUnixTimeMilliseconds().ToString(), fireAndForget);
                 }
                 Task.WaitAll(pushCommands);
                 size = await _queue.Size(name);
@@ -56,7 +56,7 @@ namespace Redis.Playground.Api.Controllers
             {
                 for (var i = 0; i < count; i++)
                 {
-                    size = await _queue.Push(name, DateTimeOffset.UtcNow.ToUnixTimeMilliseconds().ToString());
+                    size = await _queue.Push(name, DateTimeOffset.UtcNow.ToUnixTimeMilliseconds().ToString(), fireAndForget);
                 }    
             }
             

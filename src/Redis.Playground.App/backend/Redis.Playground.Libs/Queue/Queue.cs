@@ -12,9 +12,14 @@ namespace Redis.Playground.Libs.Queue
             _database = database;
         }
 
-        public async Task<long> Push(string key, string value)
+        public async Task<long> Push(string key, string value, bool fireAndForget = true)
         {
-           return await _database.ListLeftPushAsync(FullKey(key), value, When.Always, CommandFlags.FireAndForget);
+            if (fireAndForget)
+            {
+                return await _database.ListLeftPushAsync(FullKey(key), value, When.Always, CommandFlags.FireAndForget);     
+            }
+
+            return await _database.ListLeftPushAsync(FullKey(key), value);
         }
 
         public async Task<string> Pop(string key)

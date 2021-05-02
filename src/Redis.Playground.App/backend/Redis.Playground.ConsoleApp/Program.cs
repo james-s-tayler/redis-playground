@@ -16,16 +16,20 @@ namespace Redis.Playground.ConsoleApp
             
             var connectionMultiplexer = ConnectionMultiplexer.Connect("localhost");
             var queue = new Queue(connectionMultiplexer.GetDatabase(0));
-            
-            Console.WriteLine($"Draining queue {queueName}!");
+
+            while (true)
+            {
+                queue.Push(queueName, "hello").GetAwaiter().GetResult();
+            }
+            /*Console.WriteLine($"Draining queue {queueName}!");
             
             while (queue.Size(queueName).GetAwaiter().GetResult() > 0)
             {
-                var queueMessage = queue.Pop(queueName).GetAwaiter().GetResult();
-                Console.WriteLine(queueMessage);
+                queue.Pop(queueName).GetAwaiter().GetResult();
+                //Console.WriteLine(queueMessage);
             }
             
-            Console.WriteLine($"Finished draining queue {queueName}");
+            Console.WriteLine($"Finished draining queue {queueName}");*/
         }
     }
 }

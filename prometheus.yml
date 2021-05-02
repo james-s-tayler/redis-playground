@@ -32,6 +32,4 @@ scrape_configs:
       - targets: ['docker-exporter:9417']
   - job_name: 'redis-playground-api'
     static_configs:
-      - targets: ['redis-playground-api:5000']
-    metrics_path: /metrics
- 
+      - targets: ['redis-playground-api:80'] 
