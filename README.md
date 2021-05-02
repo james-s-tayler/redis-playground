@@ -1,8 +1,16 @@
-# Redis Playground - an observable dev environment for understanding Redis
+# Redis Playground 
+## An observable dev environment for understanding Redis
+
+This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to communicate with `redis` and instrumented with `OpenTelemetry` + `Jaeger` for traces and `Prometheus` + `Grafana` for metrics all running in `docker-compose`.
 
 ## Getting Started
 
- `./start.sh`
+ - Run `./start.sh` to run the `docker-compose` and start the app.
+ - Redis.Playground.App
+   - http://localhost:5000/Queue/Push/{queueName}/{messageCount}
+   - http://localhost:5000/Queue/Size/{queueName}
+ - Grafana - http://localhost:3000 (admin/admin)
+ - Jaeger UI - http://localhost:16686
 
 ## 150+ Talks on Redis
  - ### Use Cases
