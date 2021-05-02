@@ -31,12 +31,29 @@ services:
      - ASPNETCORE_ENVIRONMENT=Development
     build:
       context: src/Redis.Playground.App/backend
-      dockerfile: Redis.Playground.Api/Dockerfile
+      dockerfile: Redis.Playground.Api.Dockerfile
     networks:
      - redis-playground
     depends_on:
      - redis
-  
+
+  jaeger:
+    container_name: jaeger
+    image: jaegertracing/all-in-one:1.22
+    ports:
+     - 5775:5775/udp
+     - 6831:6831/udp
+     - 6832:6832/udp
+     - 5778:5778
+     - 16686:16686
+     - 14268:14268
+     - 14250:14250
+     - 9411:9411
+    environment:
+     - COLLECTOR_ZIPKIN_HOST_PORT=:9411
+    networks:
+     - redis-playground
+
   prometheus:
     container_name: prometheus
     image: prom/prometheus:latest

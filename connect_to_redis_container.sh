@@ -1,2 +1,2 @@
 #! /bin/bash
-docker exec -it dev-redis sh
+docker exec -it redis sh

@@ -7,7 +7,7 @@ WORKDIR /app
 COPY . .
 WORKDIR /app
 RUN dotnet restore -nowarn:msb3202,nu1503
-RUN dotnet build --no-restore -c Release -o output
+RUN dotnet build Redis.Playground.Api --no-restore -c Release -o output
 
 FROM build AS publish
 RUN dotnet publish --no-restore -c Release -o output

@@ -28,7 +28,7 @@ namespace Redis.Playground.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var redisClientConnection = ConnectionMultiplexer.Connect("localhost");
+            var redisClientConnection = ConnectionMultiplexer.Connect("redis");
             services.AddSingleton<IConnectionMultiplexer>(redisClientConnection);
             services.AddSingleton<IDatabaseAsync>(provider =>
             {
@@ -45,7 +45,8 @@ namespace Redis.Playground.Api
                         .AddHttpClientInstrumentation()
                         .AddSqlClientInstrumentation()
                         .AddRedisInstrumentation(redisClientConnection)
-                        .AddJaegerExporter();
+                        .AddJaegerExporter(options => 
+                        options.AgentHost = "jaeger");
                 });
             
             services.AddHttpClient("InstrumentedHttpClient")
