@@ -33,3 +33,5 @@ scrape_configs:
   - job_name: 'redis-playground-api'
     static_configs:
       - targets: ['redis-playground-api:5000']
+    metrics_path: /metrics
+ 
