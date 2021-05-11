@@ -19,6 +19,11 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
    - [ASP.NET Core - controller summary](https://grafana.com/grafana/dashboards/10915)
    - [Docker - docker-compose containers summary](https://grafana.com/grafana/dashboards/11467)
 
+
+## Reading Materials on Redis
+- [Understanding The Top 5 Redis Performance Metrics - DataDog](https://www.datadoghq.com/pdf/Understanding-the-Top-5-Redis-Performance-Metrics.pdf)
+- [Redis Essentials - Packt](https://www.amazon.com/Redis-Essentials-Maxwell-Dayvson-Silva-ebook/dp/B00ZXFCFLO)
+
 ## 150+ Talks on Redis
  - ### Use Cases
    - #### TL;DR
