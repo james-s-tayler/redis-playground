@@ -164,6 +164,7 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
        - [RediSearch Aggregation Capabilities](https://www.youtube.com/watch?v=UHZ_VFoRHcQ)
        - [Getting Started With GeoCoding With Redis](https://www.youtube.com/watch?v=0dvR9I9kK9g)
        - [RediSearch: Build modern apps with high speed performance](https://www.youtube.com/watch?v=DMYL2Uzgi8s)
+       - [How we built real-time full-text website search with RediSearch](https://www.youtube.com/watch?v=dj2wV9mQHQM)
      - ##### Redis Gears 
        - [RedisGears GA](https://www.youtube.com/watch?v=J4clHQJScZQ)
      - ##### RedisAI 
@@ -181,10 +182,12 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
        - [RedisGraph and it's use cases](https://www.youtube.com/watch?v=d3upsk6Ra18)
        - [Building a knowledge graph using RedisGraph](https://www.youtube.com/watch?v=sSFSuEVLNxE)
        - [Exploring code bases with RedisGraph](https://www.youtube.com/watch?v=pE3cg6jK2Zg)
+       - [Building the fastest native graph database: RedisGraph](https://www.youtube.com/watch?v=wCtCICDQbP8)
      - ##### RedisTimeSeries 
        - [Intro to RedisTimeSeries](https://www.youtube.com/watch?v=rXynFOrrd-Q)
        - [Time Series Data in Real Time with Redis Time Series Module - RedisConf 2018](https://www.youtube.com/watch?v=Y2VbxNOYzVE)
        - [Leveraging Redis Enterprise with RedisTimeSeries](https://www.youtube.com/watch?v=mfahK1qHRhk)
+       - [Real-time querying and aggregating of time series data with RedisTimeSeries](https://www.youtube.com/watch?v=nkUZqxjs2rk)
      - ##### Extending Redis 
        - [Redis Lua Scripts](https://www.youtube.com/watch?v=eReTl8NhHCs)
        - [Writing Redis Modules in Rust](https://www.youtube.com/watch?v=c1E8jxWVfoI)
@@ -280,6 +283,7 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
    - #### Monitoring / Observability / Dev Tooling
      - [RedisInsight - RedisConf 2020](https://www.youtube.com/watch?v=HBC3OSYOgj0)
      - [RedisInsight - A FREE Robust GUI Tool to Monitor Redis Data](https://www.youtube.com/watch?v=VqPdHngkz1I)
+     - [Improve your Redis developer experience with RedisInsight - RedisConf 2021](https://www.youtube.com/watch?v=ppYSS6opUiQ)
      - [Monitoring Redis data using RedisInsight - OSConf 2020](https://www.youtube.com/watch?v=BVXFBhKeUxk)
      - [Prometheus Exporter and Grafana with Redis](https://www.youtube.com/watch?v=5m474BwV660)
      - [Getting visibility into complex Redis Pub/Sub transactions using OpenTelemetry](https://www.youtube.com/watch?v=ewJdEfqXP8s)
