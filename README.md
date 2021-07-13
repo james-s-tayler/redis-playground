@@ -163,6 +163,7 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
        - [Add Real-Time Full-Text Search to Your Web Site with RediSearch](https://www.youtube.com/watch?v=tfDdoVg_jXY)
        - [RediSearch Aggregation Capabilities](https://www.youtube.com/watch?v=UHZ_VFoRHcQ)
        - [Getting Started With GeoCoding With Redis](https://www.youtube.com/watch?v=0dvR9I9kK9g)
+       - [RediSearch: Build modern apps with high speed performance](https://www.youtube.com/watch?v=DMYL2Uzgi8s)
      - ##### Redis Gears 
        - [RedisGears GA](https://www.youtube.com/watch?v=J4clHQJScZQ)
      - ##### RedisAI 
@@ -171,6 +172,7 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
      - ##### RedisJSON 
        - [JSON in Redis: When to use RedisJSON - Redis Day Seattle 2020](https://www.youtube.com/watch?v=zpgGkxL6ozU)
        - [ReJSON = {"id": "old dog", "activity": "new trick"}](https://www.youtube.com/watch?v=NLRbq2FtcIk)
+       - [RedisJSON + RediSearch as a real-time document database](https://www.youtube.com/watch?v=6viyQCcdrU0)
      - ##### RedisGraph 
        - [RedisGraph 2.2: The Fastest Way to Query Your Highly Connected Data in Redis](https://www.youtube.com/watch?v=JNpHba2kRGM)
        - [A Practical Introduction to RedisGraph](https://www.youtube.com/watch?v=aGHALjV6JGc)
@@ -178,6 +180,7 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
        - [Redis Graph - Redis Day TLV 2018](https://www.youtube.com/watch?v=HpEa2cftbnc)
        - [RedisGraph and it's use cases](https://www.youtube.com/watch?v=d3upsk6Ra18)
        - [Building a knowledge graph using RedisGraph](https://www.youtube.com/watch?v=sSFSuEVLNxE)
+       - [Exploring code bases with RedisGraph](https://www.youtube.com/watch?v=pE3cg6jK2Zg)
      - ##### RedisTimeSeries 
        - [Intro to RedisTimeSeries](https://www.youtube.com/watch?v=rXynFOrrd-Q)
        - [Time Series Data in Real Time with Redis Time Series Module - RedisConf 2018](https://www.youtube.com/watch?v=Y2VbxNOYzVE)
