@@ -121,6 +121,7 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
      - [Using Redis for Schema Detection](https://www.youtube.com/watch?v=0525hq2uWlk)
      - [Identifying Fraudulent Online Behavior](https://www.youtube.com/watch?v=y6vY2-7UOZk)
      - [High-performance real-time recommendations](https://www.youtube.com/watch?v=2VTiGS_xHaI)
+     - [Redis as a scalable feature store](https://www.youtube.com/watch?v=2Fr2enOwTdU)
    - #### Other
      - [Building Highly Concurrent, Low Latency Gaming System - Redis Day London 2019](https://www.youtube.com/watch?v=5jwuDM6Z3F8)
      - [Using Redis and RediSearch Module to Store & Search Volatile Data - RedisConf 2017](https://www.youtube.com/watch?v=Zsz1FhLQ2cM)
@@ -235,6 +236,7 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
      - [How Roblox Keeps Millions of Users up to Date with Redis Pub/Sub - RedisConf 2017](https://www.youtube.com/watch?v=nXTxXSWBayg)
      - [How GAP scaled over 100x using Redis](https://www.youtube.com/watch?v=mxWUGaPKjtI)
      - [Processing 160 million messages a day using Redis with Wavy (Portuguese w/ English slides)](https://www.youtube.com/watch?v=N-myTniud5s)
+     - [Uber's journey to Redis Cluster](https://www.youtube.com/watch?v=JmCXklyNs2s)
      - [How Adobe Leverages Redis to Serve and Secure Billions of API Requests](https://www.youtube.com/watch?v=gvQRg4DJDIE)
    - #### Redis Enterprise
      - [Continuous Availability, Infinite Scaling, Secure, Cost-effective Redis - RedisConf 2017](https://www.youtube.com/watch?v=UOcluQa2XL4)
