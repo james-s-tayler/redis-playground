@@ -83,6 +83,7 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
      - [Scaling applications with Azure Redis Cache and Machine Learning](https://www.youtube.com/watch?v=NgERP5g_Nuw)
      - [Scaling SQL Write-Master Database Clusters](https://www.youtube.com/watch?v=ElP4EoYhROE)
      - [Quickly scaling database clusters with Redis](https://www.youtube.com/watch?v=e8h72uKeBjU)
+     - [Write-behind and read-through with RedisGears](https://www.youtube.com/watch?v=J3eCZJGVze4)
    - #### Session Management
      - [Creating a Highly Available Persistent Session Management Service - RedisConf 2020](https://www.youtube.com/watch?v=Bnq_U-eGOwc)
      - [Session Management - Redis Labs](https://www.youtube.com/watch?v=uJePLpfPsug)
