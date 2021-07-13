@@ -62,6 +62,11 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
        - SUNION {user123}:all_friends {user123}:friends:usa {user123}:friends:brazil
    - Requires client to support Redis Cluster
      - redis-cli requires passing -c to enable cluster mode, else it will treat Redis as a single instance
+     - CAP Theorem analysis
+       - also still not strongly consistent under network partition scenarios
+ - RedisRaft
+   - This is a Redis Module designed to provide a strongly consistent clustered Redis deployment
+   - https://github.com/RedisLabs/redisraft 
 
 ## 150+ Talks on Redis
  - ### Use Cases
