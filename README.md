@@ -24,6 +24,43 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
 - [Understanding The Top 5 Redis Performance Metrics - DataDog](https://www.datadoghq.com/pdf/Understanding-the-Top-5-Redis-Performance-Metrics.pdf)
 - [Redis Essentials - Packt](https://www.amazon.com/Redis-Essentials-Maxwell-Dayvson-Silva-ebook/dp/B00ZXFCFLO)
 
+## TL;DR Redis High Availability
+ - Redis Sentinel
+   - The goal of Redis Sentinel is to provide reliable automatic failover in a master/slave topology without sharding data
+   - Sentinel is a separate process from the Redis server and it listens on its own port
+   - sentinel.conf stores the location of the master node
+     - this is updated/re-written on failover, or when new sentinel or slave joins
+   - Communication between sentinels happens via a pub/sub channel on the master
+   - Sentinels PING master, and if a quorom of sentinels don't receive PONG from the master after "down-after-milliseconds" amount of time then they trigger failover
+   - CAP theorem analysis suggests Redis Sentinel is not strongly consistent in the case of network partition
+     - https://aphyr.com/posts/287-asynchronous-replication-with-failover
+     - http://antirez.com/news/56  
+   - Requires a client that supports Redis Sentinel
+   - Developed and released before Redis Cluster when Antirez had less experience in distributed systems 
+ - Redis Cluster
+   - The goal of Redis Cluster is to distribute data across different Redis instances and perform automatic failover if any problem happens to any master instance
+   - Single process, but requires 2 ports (one for Redis server process, one for communicating between Redis instances)
+   - Requires AT LEAST 3 masters to be considered healthy.
+     - You should have at least one replica per master, otherwise if a master fails its data will be lost
+     - Furthermore the entire cluster may become unavailable under the default configuration if no replicas are present
+       - cluster-require-full-coverage is the configuration that controls this behavior.
+         - it defaults to `yes` meaning the entire cluster becomes unavailable if some hash slots are not reachable
+         - setting it to `no` means that queries routed to hash slots that have become unreachable simply return an error while queries routed to reachable hash slots remain available
+     - Promoting a slave to a master takes some time and data on the failed master will be unavailable for a short time until the failover is complete
+   - All data is sharded across masters and replicated to slaves.
+     - data is partitioned across 16,384 "hash slots" with each master owning a portion of the slots
+     - var hashSlot = crc16(redisKey) % 16384 
+     - there is no automatic redistribution of slots across masters
+       - by default they are distributed evenly across the masters when you create the cluster unless you specify otherwise
+     - any multi-key operations require all the keys to be stored on the same node
+       - "hash tags" can be used for this
+         - The hash tag is delimited by curly brace and ensures the same hash slot is chosen for all keys    
+       - SADD {user123}:friends:usa "john"
+       - SADD {user123}:friends:brazil "bruno"
+       - SUNION {user123}:all_friends {user123}:friends:usa {user123}:friends:brazil
+   - Requires client to support Redis Cluster
+     - redis-cli requires passing -c to enable cluster mode, else it will treat Redis as a single instance
+
 ## 150+ Talks on Redis
  - ### Use Cases
    - #### TL;DR
