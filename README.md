@@ -46,6 +46,8 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
        - cluster-require-full-coverage is the configuration that controls this behavior.
          - it defaults to `yes` meaning the entire cluster becomes unavailable if some hash slots are not reachable
          - setting it to `no` means that queries routed to hash slots that have become unreachable simply return an error while queries routed to reachable hash slots remain available
+     - In addition multiple replicas per master are recommended as that way when a master fails and one of its replicas is promoted to master then it still has a replica, otherwise it wouldn't have a replica and if that master were to fail it could make the cluster unavailable
+       - to save on cost it is possible to configure most masters with only a single replica and one master with two replicas and provided `cluster-migration-barrier` is set to `1` when a master with only a single replica failed and failover was triggered then afterwards the "spare" replica from the master with multiple replicas would switch to become a replica of the newly promoted master  
      - Promoting a slave to a master takes some time and data on the failed master will be unavailable for a short time until the failover is complete
    - All data is sharded across masters and replicated to slaves.
      - data is partitioned across 16,384 "hash slots" with each master owning a portion of the slots
