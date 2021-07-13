@@ -43,7 +43,7 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
    - Requires AT LEAST 3 masters to be considered healthy.
      - You should have at least one replica per master, otherwise if a master fails its data will be lost
      - Furthermore the entire cluster may become unavailable under the default configuration if no replicas are present
-       - cluster-require-full-coverage is the configuration that controls this behavior.
+       - `cluster-require-full-coverage` is the configuration that controls this behavior.
          - it defaults to `yes` meaning the entire cluster becomes unavailable if some hash slots are not reachable
          - setting it to `no` means that queries routed to hash slots that have become unreachable simply return an error while queries routed to reachable hash slots remain available
      - In addition multiple replicas per master are recommended as that way when a master fails and one of its replicas is promoted to master then it still has a replica, otherwise it wouldn't have a replica and if that master were to fail it could make the cluster unavailable
