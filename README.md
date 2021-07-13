@@ -142,6 +142,7 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
      - [Interview: Chris Richardson Of Microservices.io](https://www.youtube.com/watch?v=q5Z8-cwGBXQ)
      - [Common Redis Use Cases for Cloud-Native Apps and Microservices](https://www.youtube.com/watch?v=v8XubeXz9Uk)
      - [Microservices Architecture in the Real World](https://www.youtube.com/watch?v=VQAaeCIe8yQ)
+     - [Microservices w/Redis on Kubernetes + ElastiCache - RedisConf 2021](https://www.youtube.com/watch?v=z_MDUWYS4us)
  - ### Redis Concepts / Internals
    - #### Data Structures
      - [Redis Data Structures for Non-Redis Users](https://www.youtube.com/watch?v=ELk_W9BBTDU)
