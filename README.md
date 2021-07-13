@@ -127,6 +127,7 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
      - [Using Redis and RediSearch Module to Store & Search Volatile Data - RedisConf 2017](https://www.youtube.com/watch?v=Zsz1FhLQ2cM)
      - [Unorthodox Redis Use Cases](https://www.youtube.com/watch?v=u-p3Q1Uts1o)
      - [Build, deploy, and run real-time applications with Redis - RedisConf 2021](https://www.youtube.com/watch?v=Ryo-4ObQEPI)
+     - [Redis as a primary database](https://www.youtube.com/watch?v=mMevKaUshKo)
    - #### Microservices / Application Architecture
      - [Implementation patterns to leverage Redis to turbo charge existing Legacy applications](https://www.youtube.com/watch?v=xQJ58dDPYL4) 
      - [Microservices and Redis: A Match made in Heaven](https://www.youtube.com/watch?v=wfyq_-tWkiY)
@@ -166,6 +167,7 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
        - [RedisGears GA](https://www.youtube.com/watch?v=J4clHQJScZQ)
      - ##### RedisAI 
        - [RedisAI in Production](https://www.youtube.com/watch?v=20Aj12ovASE)
+       - [Hacking your way into machine learning with RedisAI](https://www.youtube.com/watch?v=rPsLkkQSjhk)
      - ##### RedisJSON 
        - [JSON in Redis: When to use RedisJSON - Redis Day Seattle 2020](https://www.youtube.com/watch?v=zpgGkxL6ozU)
        - [ReJSON = {"id": "old dog", "activity": "new trick"}](https://www.youtube.com/watch?v=NLRbq2FtcIk)
@@ -175,6 +177,7 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
        - [Deep Dive into RedisGraph - RedisConf 2019](https://www.youtube.com/watch?v=4KS2MRccQX4)
        - [Redis Graph - Redis Day TLV 2018](https://www.youtube.com/watch?v=HpEa2cftbnc)
        - [RedisGraph and it's use cases](https://www.youtube.com/watch?v=d3upsk6Ra18)
+       - [Building a knowledge graph using RedisGraph](https://www.youtube.com/watch?v=sSFSuEVLNxE)
      - ##### RedisTimeSeries 
        - [Intro to RedisTimeSeries](https://www.youtube.com/watch?v=rXynFOrrd-Q)
        - [Time Series Data in Real Time with Redis Time Series Module - RedisConf 2018](https://www.youtube.com/watch?v=Y2VbxNOYzVE)
@@ -271,8 +274,9 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
      - [Practical Use Cases for Access Control Lists in Redis 6](https://www.youtube.com/watch?v=BGoBM-Bl2UI)
      - [Secure Redis Cluster at Box](https://www.youtube.com/watch?v=W1FICEpaQ1A)
      - [Hack The Box: Postman Walkthrough [Redis, SSH, Webmin Exploit]](https://www.youtube.com/watch?v=rR9AUjLnM1Q)
-   - #### Monitoring / Tooling
+   - #### Monitoring / Observability / Dev Tooling
      - [RedisInsight - RedisConf 2020](https://www.youtube.com/watch?v=HBC3OSYOgj0)
      - [RedisInsight - A FREE Robust GUI Tool to Monitor Redis Data](https://www.youtube.com/watch?v=VqPdHngkz1I)
      - [Monitoring Redis data using RedisInsight - OSConf 2020](https://www.youtube.com/watch?v=BVXFBhKeUxk)
      - [Prometheus Exporter and Grafana with Redis](https://www.youtube.com/watch?v=5m474BwV660)
+     - [Getting visibility into complex Redis Pub/Sub transactions using OpenTelemetry](https://www.youtube.com/watch?v=ewJdEfqXP8s)
