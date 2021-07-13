@@ -109,7 +109,7 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
      - [High-performance messaging with Go and Redis](https://www.youtube.com/watch?v=x5__QAIxQZw)
      - [Cancellable Timeout Queues, A Use Pattern](https://www.youtube.com/watch?v=tcVAqmpdm1I)
      - [Increasing Message Delivery Rates with Redis](https://www.youtube.com/watch?v=_XcN0e43dHM)
-   - #### Analytics / AI
+   - #### Analytics / AI / IoT
      - [Redis Analytics Use Cases](https://www.youtube.com/watch?v=D06iijqAX1A)
      - [Real Time Log Analytics Using Probabilistic Data Structures in Redis](https://www.youtube.com/watch?v=ord1F0azUcQ)
      - [How to Use Bloom Filters in Redis](https://www.youtube.com/watch?v=Z9_wrhdbSC4)
@@ -120,10 +120,12 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
      - [Real-Time Redis Deep-Learned Detection at the Edge - RedisConf 2020](https://www.youtube.com/watch?v=lDYnJsX9v50)
      - [Using Redis for Schema Detection](https://www.youtube.com/watch?v=0525hq2uWlk)
      - [Identifying Fraudulent Online Behavior](https://www.youtube.com/watch?v=y6vY2-7UOZk)
+     - [High-performance real-time recommendations](https://www.youtube.com/watch?v=2VTiGS_xHaI)
    - #### Other
      - [Building Highly Concurrent, Low Latency Gaming System - Redis Day London 2019](https://www.youtube.com/watch?v=5jwuDM6Z3F8)
      - [Using Redis and RediSearch Module to Store & Search Volatile Data - RedisConf 2017](https://www.youtube.com/watch?v=Zsz1FhLQ2cM)
      - [Unorthodox Redis Use Cases](https://www.youtube.com/watch?v=u-p3Q1Uts1o)
+     - [Build, deploy, and run real-time applications with Redis - RedisConf 2021](https://www.youtube.com/watch?v=Ryo-4ObQEPI)
    - #### Microservices / Application Architecture
      - [Implementation patterns to leverage Redis to turbo charge existing Legacy applications](https://www.youtube.com/watch?v=xQJ58dDPYL4) 
      - [Microservices and Redis: A Match made in Heaven](https://www.youtube.com/watch?v=wfyq_-tWkiY)
@@ -175,6 +177,7 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
      - ##### RedisTimeSeries 
        - [Intro to RedisTimeSeries](https://www.youtube.com/watch?v=rXynFOrrd-Q)
        - [Time Series Data in Real Time with Redis Time Series Module - RedisConf 2018](https://www.youtube.com/watch?v=Y2VbxNOYzVE)
+       - [Leveraging Redis Enterprise with RedisTimeSeries](https://www.youtube.com/watch?v=mfahK1qHRhk)
      - ##### Extending Redis 
        - [Redis Lua Scripts](https://www.youtube.com/watch?v=eReTl8NhHCs)
        - [Writing Redis Modules in Rust](https://www.youtube.com/watch?v=c1E8jxWVfoI)
@@ -208,6 +211,7 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
      - [Redis Networking Nerd Down](https://www.youtube.com/watch?v=3h316lNYMyQ)
      - [Redis is Dead Long live Redis!](https://www.youtube.com/watch?v=NymIgA7Wa78)
      - [Evolving Your Distributed Cache In A Continuous Delivery World](https://www.youtube.com/watch?v=Dcr6vVHpgWI)
+     - [How Redis augments site reliability engineering](https://www.youtube.com/watch?v=FIwu3nnektI)
    - #### High Availability / Scaling
      - [Build and Deploy Containerized Redis Cache for High Availability and Performance](https://www.youtube.com/watch?v=LMphQpep3CQ)
      - [Scaling Redis To 1M Ops/Sec](https://www.youtube.com/watch?v=55TFuBMFWns)
