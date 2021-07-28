@@ -24,6 +24,50 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
 - [Understanding The Top 5 Redis Performance Metrics - DataDog](https://www.datadoghq.com/pdf/Understanding-the-Top-5-Redis-Performance-Metrics.pdf)
 - [Redis Essentials - Packt](https://www.amazon.com/Redis-Essentials-Maxwell-Dayvson-Silva-ebook/dp/B00ZXFCFLO)
 
+## TL;DR Redis High Availability
+ - Redis Sentinel
+   - The goal of Redis Sentinel is to provide reliable automatic failover in a master/slave topology without sharding data
+   - Sentinel is a separate process from the Redis server and it listens on its own port
+   - sentinel.conf stores the location of the master node
+     - this is updated/re-written on failover, or when new sentinel or slave joins
+   - Communication between sentinels happens via a pub/sub channel on the master
+   - Sentinels PING master, and if a quorom of sentinels don't receive PONG from the master after "down-after-milliseconds" amount of time then they trigger failover
+   - CAP theorem analysis suggests Redis Sentinel is not strongly consistent in the case of network partition
+     - https://aphyr.com/posts/287-asynchronous-replication-with-failover
+     - http://antirez.com/news/56  
+   - Requires a client that supports Redis Sentinel
+   - Developed and released before Redis Cluster when Antirez had less experience in distributed systems 
+ - Redis Cluster
+   - The goal of Redis Cluster is to distribute data across different Redis instances and perform automatic failover if any problem happens to any master instance
+   - Single process, but requires 2 ports (one for Redis server process, one for communicating between Redis instances)
+   - Requires AT LEAST 3 masters to be considered healthy.
+     - You should have at least one replica per master, otherwise if a master fails its data will be lost
+     - Furthermore the entire cluster may become unavailable under the default configuration if no replicas are present
+       - `cluster-require-full-coverage` is the configuration that controls this behavior.
+         - it defaults to `yes` meaning the entire cluster becomes unavailable if some hash slots are not reachable
+         - setting it to `no` means that queries routed to hash slots that have become unreachable simply return an error while queries routed to reachable hash slots remain available
+     - In addition multiple replicas per master are recommended as that way when a master fails and one of its replicas is promoted to master then it still has a replica, otherwise it wouldn't have a replica and if that master were to fail it could make the cluster unavailable
+       - to save on cost it is possible to configure most masters with only a single replica and one master with two replicas and provided `cluster-migration-barrier` is set to `1` when a master with only a single replica failed and failover was triggered then afterwards the "spare" replica from the master with multiple replicas would switch to become a replica of the newly promoted master  
+     - Promoting a slave to a master takes some time and data on the failed master will be unavailable for a short time until the failover is complete
+   - All data is sharded across masters and replicated to slaves.
+     - data is partitioned across 16,384 "hash slots" with each master owning a portion of the slots
+     - var hashSlot = crc16(redisKey) % 16384 
+     - there is no automatic redistribution of slots across masters
+       - by default they are distributed evenly across the masters when you create the cluster unless you specify otherwise
+     - any multi-key operations require all the keys to be stored on the same node
+       - "hash tags" can be used for this
+         - The hash tag is delimited by curly brace and ensures the same hash slot is chosen for all keys    
+       - SADD {user123}:friends:usa "john"
+       - SADD {user123}:friends:brazil "bruno"
+       - SUNION {user123}:all_friends {user123}:friends:usa {user123}:friends:brazil
+   - Requires client to support Redis Cluster
+     - redis-cli requires passing -c to enable cluster mode, else it will treat Redis as a single instance
+     - CAP Theorem analysis
+       - also still not strongly consistent under network partition scenarios
+ - RedisRaft
+   - This is a Redis Module designed to provide a strongly consistent clustered Redis deployment
+   - https://github.com/RedisLabs/redisraft 
+
 ## 150+ Talks on Redis
  - ### Use Cases
    - #### TL;DR
@@ -38,6 +82,8 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
      - [Improve Cache Speed at Scale - RedisConf 2020](https://www.youtube.com/watch?v=mPg20ykAFU4)
      - [Scaling applications with Azure Redis Cache and Machine Learning](https://www.youtube.com/watch?v=NgERP5g_Nuw)
      - [Scaling SQL Write-Master Database Clusters](https://www.youtube.com/watch?v=ElP4EoYhROE)
+     - [Quickly scaling database clusters with Redis](https://www.youtube.com/watch?v=e8h72uKeBjU)
+     - [Write-behind and read-through with RedisGears](https://www.youtube.com/watch?v=J3eCZJGVze4)
    - #### Session Management
      - [Creating a Highly Available Persistent Session Management Service - RedisConf 2020](https://www.youtube.com/watch?v=Bnq_U-eGOwc)
      - [Session Management - Redis Labs](https://www.youtube.com/watch?v=uJePLpfPsug)
@@ -65,7 +111,7 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
      - [High-performance messaging with Go and Redis](https://www.youtube.com/watch?v=x5__QAIxQZw)
      - [Cancellable Timeout Queues, A Use Pattern](https://www.youtube.com/watch?v=tcVAqmpdm1I)
      - [Increasing Message Delivery Rates with Redis](https://www.youtube.com/watch?v=_XcN0e43dHM)
-   - #### Analytics / AI
+   - #### Analytics / AI / IoT
      - [Redis Analytics Use Cases](https://www.youtube.com/watch?v=D06iijqAX1A)
      - [Real Time Log Analytics Using Probabilistic Data Structures in Redis](https://www.youtube.com/watch?v=ord1F0azUcQ)
      - [How to Use Bloom Filters in Redis](https://www.youtube.com/watch?v=Z9_wrhdbSC4)
@@ -76,10 +122,14 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
      - [Real-Time Redis Deep-Learned Detection at the Edge - RedisConf 2020](https://www.youtube.com/watch?v=lDYnJsX9v50)
      - [Using Redis for Schema Detection](https://www.youtube.com/watch?v=0525hq2uWlk)
      - [Identifying Fraudulent Online Behavior](https://www.youtube.com/watch?v=y6vY2-7UOZk)
+     - [High-performance real-time recommendations](https://www.youtube.com/watch?v=2VTiGS_xHaI)
+     - [Redis as a scalable feature store](https://www.youtube.com/watch?v=2Fr2enOwTdU)
    - #### Other
      - [Building Highly Concurrent, Low Latency Gaming System - Redis Day London 2019](https://www.youtube.com/watch?v=5jwuDM6Z3F8)
      - [Using Redis and RediSearch Module to Store & Search Volatile Data - RedisConf 2017](https://www.youtube.com/watch?v=Zsz1FhLQ2cM)
      - [Unorthodox Redis Use Cases](https://www.youtube.com/watch?v=u-p3Q1Uts1o)
+     - [Build, deploy, and run real-time applications with Redis - RedisConf 2021](https://www.youtube.com/watch?v=Ryo-4ObQEPI)
+     - [Redis as a primary database](https://www.youtube.com/watch?v=mMevKaUshKo)
    - #### Microservices / Application Architecture
      - [Implementation patterns to leverage Redis to turbo charge existing Legacy applications](https://www.youtube.com/watch?v=xQJ58dDPYL4) 
      - [Microservices and Redis: A Match made in Heaven](https://www.youtube.com/watch?v=wfyq_-tWkiY)
@@ -94,6 +144,7 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
      - [Interview: Chris Richardson Of Microservices.io](https://www.youtube.com/watch?v=q5Z8-cwGBXQ)
      - [Common Redis Use Cases for Cloud-Native Apps and Microservices](https://www.youtube.com/watch?v=v8XubeXz9Uk)
      - [Microservices Architecture in the Real World](https://www.youtube.com/watch?v=VQAaeCIe8yQ)
+     - [Microservices w/Redis on Kubernetes + ElastiCache - RedisConf 2021](https://www.youtube.com/watch?v=z_MDUWYS4us)
  - ### Redis Concepts / Internals
    - #### Data Structures
      - [Redis Data Structures for Non-Redis Users](https://www.youtube.com/watch?v=ELk_W9BBTDU)
@@ -115,22 +166,31 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
        - [Add Real-Time Full-Text Search to Your Web Site with RediSearch](https://www.youtube.com/watch?v=tfDdoVg_jXY)
        - [RediSearch Aggregation Capabilities](https://www.youtube.com/watch?v=UHZ_VFoRHcQ)
        - [Getting Started With GeoCoding With Redis](https://www.youtube.com/watch?v=0dvR9I9kK9g)
+       - [RediSearch: Build modern apps with high speed performance](https://www.youtube.com/watch?v=DMYL2Uzgi8s)
+       - [How we built real-time full-text website search with RediSearch](https://www.youtube.com/watch?v=dj2wV9mQHQM)
      - ##### Redis Gears 
        - [RedisGears GA](https://www.youtube.com/watch?v=J4clHQJScZQ)
      - ##### RedisAI 
        - [RedisAI in Production](https://www.youtube.com/watch?v=20Aj12ovASE)
+       - [Hacking your way into machine learning with RedisAI](https://www.youtube.com/watch?v=rPsLkkQSjhk)
      - ##### RedisJSON 
        - [JSON in Redis: When to use RedisJSON - Redis Day Seattle 2020](https://www.youtube.com/watch?v=zpgGkxL6ozU)
        - [ReJSON = {"id": "old dog", "activity": "new trick"}](https://www.youtube.com/watch?v=NLRbq2FtcIk)
+       - [RedisJSON + RediSearch as a real-time document database](https://www.youtube.com/watch?v=6viyQCcdrU0)
      - ##### RedisGraph 
        - [RedisGraph 2.2: The Fastest Way to Query Your Highly Connected Data in Redis](https://www.youtube.com/watch?v=JNpHba2kRGM)
        - [A Practical Introduction to RedisGraph](https://www.youtube.com/watch?v=aGHALjV6JGc)
        - [Deep Dive into RedisGraph - RedisConf 2019](https://www.youtube.com/watch?v=4KS2MRccQX4)
        - [Redis Graph - Redis Day TLV 2018](https://www.youtube.com/watch?v=HpEa2cftbnc)
        - [RedisGraph and it's use cases](https://www.youtube.com/watch?v=d3upsk6Ra18)
+       - [Building a knowledge graph using RedisGraph](https://www.youtube.com/watch?v=sSFSuEVLNxE)
+       - [Exploring code bases with RedisGraph](https://www.youtube.com/watch?v=pE3cg6jK2Zg)
+       - [Building the fastest native graph database: RedisGraph](https://www.youtube.com/watch?v=wCtCICDQbP8)
      - ##### RedisTimeSeries 
        - [Intro to RedisTimeSeries](https://www.youtube.com/watch?v=rXynFOrrd-Q)
        - [Time Series Data in Real Time with Redis Time Series Module - RedisConf 2018](https://www.youtube.com/watch?v=Y2VbxNOYzVE)
+       - [Leveraging Redis Enterprise with RedisTimeSeries](https://www.youtube.com/watch?v=mfahK1qHRhk)
+       - [Real-time querying and aggregating of time series data with RedisTimeSeries](https://www.youtube.com/watch?v=nkUZqxjs2rk)
      - ##### Extending Redis 
        - [Redis Lua Scripts](https://www.youtube.com/watch?v=eReTl8NhHCs)
        - [Writing Redis Modules in Rust](https://www.youtube.com/watch?v=c1E8jxWVfoI)
@@ -164,6 +224,7 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
      - [Redis Networking Nerd Down](https://www.youtube.com/watch?v=3h316lNYMyQ)
      - [Redis is Dead Long live Redis!](https://www.youtube.com/watch?v=NymIgA7Wa78)
      - [Evolving Your Distributed Cache In A Continuous Delivery World](https://www.youtube.com/watch?v=Dcr6vVHpgWI)
+     - [How Redis augments site reliability engineering](https://www.youtube.com/watch?v=FIwu3nnektI)
    - #### High Availability / Scaling
      - [Build and Deploy Containerized Redis Cache for High Availability and Performance](https://www.youtube.com/watch?v=LMphQpep3CQ)
      - [Scaling Redis To 1M Ops/Sec](https://www.youtube.com/watch?v=55TFuBMFWns)
@@ -187,6 +248,7 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
      - [How Roblox Keeps Millions of Users up to Date with Redis Pub/Sub - RedisConf 2017](https://www.youtube.com/watch?v=nXTxXSWBayg)
      - [How GAP scaled over 100x using Redis](https://www.youtube.com/watch?v=mxWUGaPKjtI)
      - [Processing 160 million messages a day using Redis with Wavy (Portuguese w/ English slides)](https://www.youtube.com/watch?v=N-myTniud5s)
+     - [Uber's journey to Redis Cluster](https://www.youtube.com/watch?v=JmCXklyNs2s)
      - [How Adobe Leverages Redis to Serve and Secure Billions of API Requests](https://www.youtube.com/watch?v=gvQRg4DJDIE)
    - #### Redis Enterprise
      - [Continuous Availability, Infinite Scaling, Secure, Cost-effective Redis - RedisConf 2017](https://www.youtube.com/watch?v=UOcluQa2XL4)
@@ -221,8 +283,10 @@ This is a `.Net Core 3.1` app using the `StackExchange.Redis` client library to 
      - [Practical Use Cases for Access Control Lists in Redis 6](https://www.youtube.com/watch?v=BGoBM-Bl2UI)
      - [Secure Redis Cluster at Box](https://www.youtube.com/watch?v=W1FICEpaQ1A)
      - [Hack The Box: Postman Walkthrough [Redis, SSH, Webmin Exploit]](https://www.youtube.com/watch?v=rR9AUjLnM1Q)
-   - #### Monitoring / Tooling
+   - #### Monitoring / Observability / Dev Tooling
      - [RedisInsight - RedisConf 2020](https://www.youtube.com/watch?v=HBC3OSYOgj0)
      - [RedisInsight - A FREE Robust GUI Tool to Monitor Redis Data](https://www.youtube.com/watch?v=VqPdHngkz1I)
+     - [Improve your Redis developer experience with RedisInsight - RedisConf 2021](https://www.youtube.com/watch?v=ppYSS6opUiQ)
      - [Monitoring Redis data using RedisInsight - OSConf 2020](https://www.youtube.com/watch?v=BVXFBhKeUxk)
      - [Prometheus Exporter and Grafana with Redis](https://www.youtube.com/watch?v=5m474BwV660)
+     - [Getting visibility into complex Redis Pub/Sub transactions using OpenTelemetry](https://www.youtube.com/watch?v=ewJdEfqXP8s)
