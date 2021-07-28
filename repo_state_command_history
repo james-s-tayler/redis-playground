@@ -1,0 +1,1 @@
+npm install -g newman //installs newman globally, newman is a command line runner for postman collections
