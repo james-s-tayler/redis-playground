@@ -1,4 +1,4 @@
-namespace Redis.Playground.Api.Models.Auth
+namespace Redis.Playground.Api.Domain.Auth.Models
 {
     public class NewUser
     {

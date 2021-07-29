@@ -1,4 +1,5 @@
 using System;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -36,6 +37,7 @@ namespace Redis.Playground.Api
                 return connectionMultiplexer.GetDatabase(0);
             });
             services.AddSingleton<IQueue, Queue>();
+            services.AddMediatR(typeof(Startup));
             services.AddControllers();
             services.AddOpenTelemetryTracing(
                 builder =>

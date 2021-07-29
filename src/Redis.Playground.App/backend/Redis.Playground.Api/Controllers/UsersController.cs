@@ -1,6 +1,9 @@
 using System.Net;
+using System.Threading.Tasks;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Redis.Playground.Api.Models.Auth;
+using Redis.Playground.Api.Domain.Auth.Models;
+using Redis.Playground.Api.Domain.Auth.Requests;
 
 namespace Redis.Playground.Api.Controllers
 {
@@ -8,18 +11,27 @@ namespace Redis.Playground.Api.Controllers
     [Route("[controller]")]
     public class UsersController : ControllerBase
     {
-        [HttpPost]
-        public ActionResult CreateUser([FromBody] NewUserRequest newUserRequest)
+        private readonly IMediator _mediator;
+
+        public UsersController(IMediator mediator)
         {
-            var user = new User
-            {
-                Username = newUserRequest.User.Username,
-                Email = newUserRequest.User.Email
-            };
-            return StatusCode((int)HttpStatusCode.Created, new UserResponse
-            {
-                User = user
-            });
+            _mediator = mediator;
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> CreateUser([FromBody] NewUserRequest newUserRequest)
+        {
+            var userResponse = await _mediator.Send(newUserRequest);
+            return StatusCode((int)HttpStatusCode.Created, userResponse);
+        }
+
+        [HttpPost("login")]
+        public ActionResult Login([FromBody] LoginUserRequest loginUserRequest)
+        {
+            if (false)
+                return Unauthorized();
+            
+            return Ok();
         }
     }
 }
